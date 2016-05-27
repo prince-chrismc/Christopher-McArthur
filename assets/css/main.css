@@ -3759,9 +3759,9 @@
 		-ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
 		-webkit-overflow-scrolling: touch;
-		background: #07090c;
-		box-shadow: none;
-		color: #fff;
+		background: #63c1ae;
+        box-shadow: none;
+		color: white;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -3787,6 +3787,11 @@
 				#nav > ul.links > li {
 					padding: 0;
 				}
+#nav > ul.links  :hover
+{
+    color: black;
+}
+
 
 					#nav > ul.links > li > a:not(.button) {
 						border: 0;
@@ -3796,6 +3801,7 @@
 						line-height: 3.5em;
 						text-decoration: none;
 					}
+
 
 					#nav > ul.links > li > .button {
 						display: block;
@@ -3814,7 +3820,7 @@
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: transparent;
 			border: 0;
-			color: #a5a9ad;
+			color: white;
 			cursor: pointer;
 			display: block;
 			height: 3.25em;
@@ -3843,7 +3849,7 @@
 			}
 
 			#nav .close:hover {
-				color: #fff;
+				color: red;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -3860,7 +3866,9 @@
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
 			transform: translateX(0);
-			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
 			visibility: visible;
 		}
 
