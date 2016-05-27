@@ -132,7 +132,7 @@
 						<h2>Get in touch</h2>
 						<p>Drop Me A line if you have any questions</p>
 					</header>
-					<form action="#" method="POST">
+					<form action="assets/php/message.php" method="POST">
 						<div class="container 75%">
 							<div class="row uniform 50%">
 								<div class="6u 12u$(xsmall)">
@@ -140,6 +140,14 @@
 								</div>
 								<div class="6u$ 12u$(xsmall)">
 									<input name="email" placeholder="Email" type="email" />
+								</div>
+                                <div class="6u 12u$(small)">
+									<input type="checkbox" id="copy" name="copy">
+									<label for="copy">Email me a copy of this message</label>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<input type="checkbox" id="human" name="human" checked>
+									<label for="human">I am a human and not a robot</label>
 								</div>
 								<div class="12u$">
 									<textarea name="message" placeholder="Message" rows="4"></textarea>
