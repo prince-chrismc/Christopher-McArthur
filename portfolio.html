@@ -1,3 +1,12 @@
+<?php
+$host  = $_SERVER['HTTP_HOST'];
+$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
+header("Location: http://$host$uri/");
+$myfile = fopen("assets/php/visits.int", "r") or die("Unable to open file!");
+gloabal $visitors = fread($myfile,filesize("assets/php/visits.int"));
+fclose($myfile);
+setcookie ( "VisitorCookie", ++$visitors, time()+60*60*24*30, "cmc_cookie/", "christophermcarthur.com", fals, false)
+?>
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -9,15 +18,13 @@
         <link rel="shortcut icon" href="images/webcode_icon.ico"/>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-        <script src="assets/js/slideShow.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	</head>
     
 	<body>
         
         <!-- Header -->
 			<header id="header">
-				<h1><a href="index.html">Christopher McArthur</a></h1>
+				<h1><a href="index.html">Christopher McArthur - <?php echo $visitors?></a></h1>
 				<a href="#nav">Menu</a>
 			</header>
 
@@ -25,13 +32,13 @@
 			<nav id="nav">
 				<ul class="links">
 					<li><a class="icon fa-home" href="index.html">  Home</a></li>
-					<li><a href="generic.html">Generic</a></li>
-					<li><a href="elements.html">Elements</a></li>
                     <li><a class="icon fa-code" href="Website%20Development.html">  Website Development</a></li>
                     <li><a class="icon fa-file-o" href="generic.html">  Resume</a></li>
-                    <li><a href="generic.html">My Bio</a></li>
+                    <li><a href="construction.html">My Bio</a></li>
                     <li><a class="icon fa-photo" href="portfolio.html">  Portfolio</a></li>
-                    <li><a href="generic.html">Robotics</a></li>
+                    <li><a href="construction.html">Robotics</a></li>
+                    <li><a href="https://github.com/prince-chrismc/" class="icon fa-github">  Github</a></li>
+					<li><a href="ca.linkedin.com/in/ChristopherMcArthur1996" class="icon fa-linkedin">  LinkedIn</a></li>
 				</ul>
 			</nav>
         
@@ -48,8 +55,8 @@
                 >
                     <div id="slide-1" class="slide">
                         <div class="caption"
-                            data-40p="opacity: 1; transform:translate(0px,0px);"
-                            data-70p="opacity: 0; transform:translate(0px,-100%);"
+                            data-5p="opacity: 1; transform:translate(0px,0px);"
+                            data-45p="opacity: 0; transform:translate(0px,250%);"
                             data-anchor-target="#helper"
                         >
                             <h1>Image 1 Title</h1>
@@ -98,24 +105,17 @@
                 <div class="marker yellow"></div>
             </div>
 
-<!-- Scripts -->
+        <!-- Scripts -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-            <script src="js/vendor/modernizr-2.6.2.min.js"></script>
             <script src="assets/js/skrollr.min.js"></script>
             <script type="text/javascript"> 
                 var s = skrollr.init(); 
             </script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-            
-
-
-
-
-
         </div>
     </body>
 </html>
