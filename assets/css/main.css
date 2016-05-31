@@ -43,6 +43,10 @@
 		-webkit-text-size-adjust: none;
 	}
 
+code{
+    color: black;
+}
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -1587,7 +1591,7 @@
 		font-family: "Raleway", Helvetica, sans-serif;
 		font-size: 13pt;
 		font-weight: 400;
-		line-height: 2em;
+		line-height: 2.25em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -2289,6 +2293,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+            padding-top: 2em;
 		}
 
 			ul.actions > li {
@@ -2518,7 +2523,7 @@
 		display: inline-block;
 		font-weight: 700;
 		height: 2.85em;
-		line-height: 2.95em;
+		line-height: 3.25em;
 		min-width: 10em;
 		padding: 0 1.5em;
 		text-align: center;
@@ -2740,7 +2745,7 @@
 			}
 
 		.feature .content {
-			padding: 2em 3em 0.1em 3em;
+			padding: 2em 3em 3em 3em;
 			width: 52%;
 		}
 
@@ -3894,6 +3899,9 @@
         background-size: cover;
         
     }
+#banner .cons{
+    background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+}
 #banner:hover{
         background-image: url("images/overlay.png"), url("../../images/montreal-banner-blur.jpg");
 }
@@ -4284,89 +4292,6 @@
         text-decoration: none;
     }
 
-/* slide show */
-}
-.css-slideshow{
-  position: absolute;
-  max-width: 495px;
-  height: 370px;
-  background: rgba(0,0,0, .75);
-  margin: 5em auto .5em auto;
-}
-.css-slideshow figure{
-  margin: 0;
-  max-width: 495px;
-  height: 370px;
-  background: rgba(0,0,0, .75);
-  position: absolute;
-}
-.css-slideshow img{
-  box-shadow: 0 0 2px #666;
-}
-.css-slideshow figcaption{
-  position: absolute;
-  top: 0;
-  color: #fff;
-  background: rgba(0,0,0, .7);
-  font-size: .8em;
-  padding: 8px 12px;
-  opacity: 0;
-  transition: opacity .5s;
-}
-.css-slideshow:hover figure figcaption{
-  transition: opacity .5s;
-  opacity: 1;
-}
-.css-slideshow-attr{
-  max-width: 495px;
-  text-align: right;
-  font-size: .7em;
-  font-style: italic;
-  margin:0 auto;
-}
-.css-slideshow-attr a{
-  color: #666;
-}
-.css-slideshow figure{
-  opacity:0;
-}
-
-figure:nth-child(6) {
-  animation: xfade 48s 40s infinite;
-}
-figure:nth-child(5) {
-  animation: xfade 48s 32s infinite;
-}
-figure:nth-child(4) {
-  animation: xfade 48s 24s infinite;
-}
-figure:nth-child(3) {
-  animation: xfade 48s 16s infinite;
-}
-figure:nth-child(2) {
-  animation: xfade 48s 8s infinite;
-}
-figure:nth-child(1) {
-  animation: xfade 48s 0s infinite;
-}
-
-@keyframes xfade{
-  0%{
-    opacity: 1;
-  }
-  10.5% {
-    opacity: 1;
-  }
-  18.85%{
-    opacity: 0;
-  }
-  96% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 
 
@@ -4378,6 +4303,8 @@ html, body {
 }
 
 .caption {
+    
+    font-size: 25px;
     position: absolute;
     bottom: 5%;
     right: 5%;
@@ -4385,7 +4312,7 @@ html, body {
     color: #fff;
 }
 p, h1 { margin: 0; }
-h1 { margin-bottom: 0.2em; }
+.caption h1 { margin-bottom: 0.2em; font-size: 2em; color: darkgrey}
 p { line-height: 1.333em; }
  
 /* full width/height container */
@@ -4413,6 +4340,11 @@ p { line-height: 1.333em; }
 #slide-1 {
     background: url('../../images/montreal-banner.jpg') no-repeat center center;
     background-size: cover;
+}
+#slide-1 .caption
+{
+    bottom: 0%;
+    top: 9%;
 }
 #slide-2 {
     background: url('../../images/banner.jpg') no-repeat center center;
@@ -4443,16 +4375,29 @@ p { line-height: 1.333em; }
 #slide-4 .caption {
     right: auto;
     left: 5%;
-    top: 5%;
+    top: 10%;
     bottom: auto;
     color: #47373f;
+}
+#slide-5{
+    background: url('../../images/photo-crane.jpe') no-repeat center center;
+    background-size: cover;
+    top: 3%;
+}
+#slide-5 .caption {
+    top: auto;
+    padding-bottom: 5%;
+    color: darkorange;
+}
+#slide-5 .caption h1{
+    color:darkorange;
 }
 
 #helper {
     position:absolute;
     left:0;
     top: 0;
-    height:600%;
+    height:605%;
     width: 0;
 }
 .marker {
