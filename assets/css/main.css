@@ -2293,7 +2293,7 @@ code{
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
-            padding-top: 2em;
+            padding-top: 0;
 		}
 
 			ul.actions > li {
@@ -3888,23 +3888,18 @@ code{
 /* Banner */
 
 	#banner {
-        
-		padding: 8em 0 6em 0;
+        padding: 8em 0 6em 0;
 		background-color: #1E2832;
-		
 		text-align: center;
         color: rgba(255, 255, 255, 0.75);
         background-attachment: fixed;
         background-image: url("images/overlay.png"), url("../../images/montreal-banner.jpg");
         background-size: cover;
-        
     }
-#banner .cons{
-    background-image: url("images/overlay.png"), url("../../images/banner.jpg");
-}
-#banner:hover{
+
+    #banner:hover{
         background-image: url("images/overlay.png"), url("../../images/montreal-banner-blur.jpg");
-}
+    }
 
 		#banner input, #banner select, #banner textarea {
 			color: #fff;
@@ -4254,43 +4249,59 @@ code{
 
 /* back to top */
 
-    .cd-top.cd-is-visible {
-        visibility: visible;
-        opacity: 1;
-    }
-    .cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
-        -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-        -moz-transition: opacity .3s 0s, visibility 0s 0s;
-        transition: opacity .3s 0s, visibility 0s 0s;
-    }
-    @media only screen and (min-width: 768px)
-    .cd-top {
-        right: 20px;
-        bottom: 20px;
-    }
-    .cd-top {
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        position: fixed;
-        bottom: 100px;
-        right: 10px;
-        z-index: 10;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-        overflow: hidden;
-        text-indent: 100%;
-        white-space: nowrap;
-        background: rgba(232, 98, 86, 0.8) url(https://codyhouse.co/demo/back-to-top/img/cd-top-arrow.svg) no-repeat center 50%;
-        visibility: hidden;
-        opacity: 0;
-        -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-        -moz-transition: opacity .3s 0s, visibility 0s .3s;
-        transition: opacity .3s 0s, visibility 0s .3s;
-    }
-    backtotop {
-        color: #e86256;
-        text-decoration: none;
-    }
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(../../images/cd-top-arrow.svg) no-repeat center 50%;
+  border-radius: 15px;
+  visibility: hidden;
+  opacity: 0;
+  /* -webkit-transition: opacity .3s 0s, visibility 0s .3s; */
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.cd-top.cd-is-visible.cd-fade-out:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
 
 
 
@@ -4311,9 +4322,9 @@ html, body {
     text-align: right;
     color: #fff;
 }
-p, h1 { margin: 0; }
+.caption p, h1 { margin: 0; }
 .caption h1 { margin-bottom: 0.2em; font-size: 2em; color: darkgrey}
-p { line-height: 1.333em; }
+.caption p { line-height: 1.333em; }
  
 /* full width/height container */
 #slides-container {
