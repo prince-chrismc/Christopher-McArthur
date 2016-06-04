@@ -1,7 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Home - Christopher McArthur</title>
+		<title>Home - Christopher McArthur Coop Concodia Montreal</title>
+        <meta name="author" content="Christopher McArthur"/>
+        <meta name="description" content="Curious to who Christopher McArthur is? Look no farther, I am a computer science Concordia Unviersity student majoring in computer applications and a part of the Coop program. This pet project is my learning of web development and where I get to let my creativity wild while still endulging myself in coding. A copy of my resume/curricula vitae is avaible; as well as a sample of my portfolio; my bio and key life events are also there for you to discover."/>
+        <meta name="keywords" content="chris christopher mcarthur concordia"/>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -13,7 +16,8 @@
 	</head>
     
     <body class="landing">
-
+    <?php include_once("assets/php/analyticstracking.php") ?>
+        
     <!-- Header -->
         <header id="header" class="alt">
             <h1><a href="index.html">Christopher McArthur</a></h1>
@@ -30,7 +34,7 @@
               <li><a class="icon fa-photo" href="portfolio.html">  Portfolio</a></li>
               <li><a href="construction.html">Robotics</a></li>
               <li><a href="https://github.com/prince-chrismc/" class="icon fa-github">  Github</a></li>
-              <li><a href="ca.linkedin.com/in/ChristopherMcArthur1996" class="icon fa-linkedin">  LinkedIn</a></li>
+              <li><a href="https://ca.linkedin.com/in/ChristopherMcArthur1996" class="icon fa-linkedin">  LinkedIn</a></li>
             </ul>
         </nav>
         
@@ -40,46 +44,52 @@
 				<h2>Welcome to My Site</h2>
 				<p>The Wonders of Programming as I learn web design</p>
 				<ul class="actions">
-					<li><a href="#one" class="button big special">Learn More</a></li>
+					<li><a href="#popup1" class="button big special">Learn More</a></li>
 				</ul>
 			</section>
+        
+        <div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Welcome!</h2>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+            Thanks for visiting. Just to let you know this site is under construction so if u ever get lost just use the menu to come back to home. =)
+        </div>
+        
+    </div>
+            <span class="pulse">Pulse</span>
+</div>
 
 		<!-- One -->
 			<section id="one" class="wrapper style1">
 				<div class="inner">
                     <article class="feature right">
-						<span class="image"><img src="images/Site_three.png" alt="" /></span>
+						<span class="image"><img src="images/Site_three.png" alt="christopher mcarthur chris mcarthur montreal concordia - website version 3" /></span>
 						<div class="content">
 							<h2>Website Development</h2>
 							<p>From a black and white - 20 line html I was opening with Chrome - web page. To adding a CSS style sheet formatting a menu and having two pages linked together. To this, a full out personal webpage to showcase who I am and what I can do.</p>
 							<ul class="actions">
-								<li>
-									<a href="Website%20Development.html" class="button alt">Explore the Evolution</a>
-								</li>
+								<li><a href="Website%20Development.html" class="button alt">Explore the Evolution</a></li>
 							</ul>
 						</div>
 					</article>
 					<article class="feature left">
-						<span class="image"><img src="images/IMGP2846.JPG" alt="" /></span>
+						<span class="image"><img src="images/IMGP2846.JPG" alt="christopher mcarthur chris mcarthur montreal concordia - resumve cv curricula vitae" /></span>
 						<div class="content">
 							<h2>My Resume</h2>
-							<p>A one stop shop for prospective employers who wish to check out my CV. My proficiencies, personal project(s), Educational background, and last but not least my work experiences.<br/>As I am currently looking for an internship, feel free to contact me if you have any questions!</p>
+							<p>A one stop shop for prospective employers who wish to check out my CV. My proficiencies, personal project(s), Educational background, and last but not least my work experiences.<br/>As I am currently looking for an internship, feel free to contact me if you have any questions! Please Note this is always improving.</p>
 							<ul class="actions">
-								<li>
-									<a href="images/CV%202016%20coop.pdf" class="button alt">Show Me!</a>
-								</li>
+								<li><a href="images/CV%202016%20coop.pdf" class="button alt">Show Me!</a></li>
 							</ul>
 						</div>
 					</article>
 					<article class="feature right">
-						<span class="image"><img src="images/IMGP7838.JPG" alt="" /></span>
+						<span class="image"><img src="images/IMGP7838.JPG" alt="christopher mcarthur chris mcarthur montreal concordia - my picture" /></span>
 						<div class="content">
 							<h2>My Bio</h2>
 							<p>Im a geeky nerd with a love for science. It's the "Here's a visual, but whats going on behind the sense is what will blow your socks off" kinda topics that rlly drive my passions. Photography, Scuba Diving and Kickboxing are my hobbies; Might not look complicated on the surface but its my technical understanding behind each that make what I do even more impressive.</p>
 							<ul class="actions">
-								<li>
-									<a href="construction.html" class="button alt">Discover Me</a>
-								</li>
+								<li><a href="construction.html" class="button alt">Discover Me</a></li>
 							</ul>
 						</div>
 					</article>
@@ -94,14 +104,14 @@
 						<p>Here's a sample of some of the photographs I have taken</p>
 					</header>
 					<div class="image-grid">
-						<a href="#" class="image"><img src="images/IMGP3852.JPG" alt="" /></a>
-						<a href="#" class="image"><img src="images/IMGP7518.JPG" alt="" /></a>
-						<a href="#" class="image"><img src="images/IMGP7797.JPG" alt="" /></a>
-						<a href="#" class="image"><img src="images/IMGP7805.JPG" alt="" /></a>
-						<a href="#" class="image"><img src="images/IMGP2707.JPG" alt="" /></a>
-						<a href="#" class="image"><img src="images/IMGP2627.JPG" alt="" /></a>
-						<a href="#" class="image"><img src="images/IMGP8109.JPG" alt="" /></a>
-						<a href="#" class="image"><img src="images/IMGP2863.JPG" alt="" /></a>
+						<a href="#" class="image"><img src="images/IMGP3852.JPG" alt="christopher mcarthur chris mcarthur montreal concordia - first picture ever" /></a>
+						<a href="#" class="image"><img src="images/IMGP7518.JPG" alt="christopher mcarthur chris mcarthur montreal concordia - light buld illumination" /></a>
+						<a href="#" class="image"><img src="images/IMGP7797.JPG" alt="christopher mcarthur chris mcarthur montreal concordia - raccon pikabo" /></a>
+						<a href="#" class="image"><img src="images/IMGP7805.JPG" alt="christopher mcarthur chris mcarthur montreal concordia - raccon stare" /></a>
+						<a href="#" class="image"><img src="images/IMGP2707.JPG" alt="christopher mcarthur chris mcarthur montreal concordia - robotics" /></a>
+						<a href="#" class="image"><img src="images/IMGP2627.JPG" alt="christopher mcarthur chris mcarthur montreal concordia - robot" /></a>
+						<a href="#" class="image"><img src="images/IMGP8109.JPG" alt="christopher mcarthur chris mcarthur montreal concordia - pink rose" /></a>
+						<a href="#" class="image"><img src="images/IMGP2863.JPG" alt="christopher mcarthur chris mcarthur montreal concordia - metro tunnel" /></a>
 					</div>
 					<ul class="actions">
 						<li><a href="portfolio.html" class="button big alt">Learn More</a></li>
@@ -167,7 +177,7 @@
                             <span class="label">Github</span>
 						</a></li>
 						<!-- ca.linkedin.com/in/ChristopherMcArthur1996 -->
-						<li><a href="ca.linkedin.com/in/ChristopherMcArthur1996" class="icon fa-linkedin">
+						<li><a href="https://ca.linkedin.com/in/ChristopherMcArthur1996" class="icon fa-linkedin">
 							<span class="label">LinkedIn</span>
 						</a></li>
 					</ul>
@@ -183,12 +193,13 @@
             <script src="assets/js/backtotop.js"></script>
 
 		<!-- Scripts -->
-            
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+        <script scr="assets/js/jquery-2.1.4.js"></script>
+        <script scr="assets/js/jquery.mobile.min.js"></script>
 
 	</body>
 </html>
