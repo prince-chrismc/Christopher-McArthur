@@ -3774,7 +3774,7 @@ code{
 	@media screen and (max-width: 480px) {
 
 		#header {
-			min-width: 320px;
+			min-width: 345px;
 		}
 
 			#header > h1 {
@@ -4076,7 +4076,7 @@ code{
 		}
 
 		#banner .icon {
-			border-radius: 35px;
+			border-radius: 15%;
 			border: solid 2px #fff;
 			color: #fff;
 			display: inline-block;
@@ -4481,6 +4481,7 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
+  height: inherit;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   visibility: hidden;
@@ -4492,13 +4493,43 @@ html, body {
 }
 
 .popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
+    position: relative;
+    width: 90%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 15% auto;
+    transition: all 1s ease-in-out;
+    z-index: 10002;
+    max-height: 68%;
+}
+@media screen and (min-width: 350px) 
+{
+    .popup
+    {
+        width: 85%;
+        max-height: 55%;
+    }
+}
+@media screen and (min-width: 600px) {
+    .popup {
+        margin: 10% auto;
+        width: 70%;
+    }
+}
+@media screen and (min-width: 850px) {
+    .popup {
+        margin: 10% auto;
+        width: 50%;
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .popup {
+        margin: 12% auto;
+        width: 40%;
+    }
 }
 
 .popup h2 {
@@ -4516,18 +4547,20 @@ html, body {
   color: #333;
 }
 .popup .close:hover {
-  color: #06D85F;
+  color: red;
 }
 .popup .content {
-  max-height: 30%;
+  max-height: inherit - 25px;
   overflow: auto;
 }
-
+.popup .content .a {
+    color: #63c1ae;
+}
 
   .pulse{
       position:fixed;
-      top: 20px;
-      right: 20px;
+      top: 5%;
+      right: 5%;
       width: 10px;
       height: 10px;
       background-color: #ff962c;
@@ -4539,10 +4572,7 @@ html, body {
     -moz-animation-delay: 0.5s;
     animation-delay: 0.5s;
   }
-  .cd-single-step.is-selected .cd-more-info {
-    opacity: 1;
-  }
-}
+
 
 @-webkit-keyframes pulse {
   0% {
