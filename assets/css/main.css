@@ -3827,10 +3827,14 @@ code{
 				#nav > ul.links > li {
 					padding: 0;
 				}
-#nav > ul.links  :hover
-{
-    color: black;
-}
+                #nav > ul.links :hover
+                {
+                    color: black;
+                }
+                #nav > ul.links :active
+                {
+                    color: orange;
+                }
 
 
 					#nav > ul.links > li > a:not(.button) {
@@ -3872,6 +3876,13 @@ code{
 			top: 0;
 			vertical-align: middle;
 			width: 7em;
+            float: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            text-shadow: 0 0 0 #fff;
+            filter: alpha(opacity=100);
+            opacity: 1; 
+            margin: 10px 10px auto;
 		}
 
 			#nav .close:before {
@@ -3885,11 +3896,14 @@ code{
 			}
 
 			#nav .close:before {
-				font-size: 1.25em;
+				font-size: 1.5em;
 			}
 
 			#nav .close:hover {
 				color: red;
+			}
+            #nav .close:active {
+				color: darkred;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -4419,7 +4433,7 @@ html, body {
 #slide-3 .caption {
     left: 5%;
     right: auto;
-    color: #47373f;
+    color: #ffffff;
 }
 #slide-4 {
     background: url('../../images/IMGP2846.JPG') no-repeat center center;
@@ -4433,6 +4447,9 @@ html, body {
     left: 5%;
     top: 10%;
     bottom: auto;
+    color: #47373f;
+}
+#slide-4 .caption h1{
     color: #47373f;
 }
 #slide-5{
