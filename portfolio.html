@@ -1,16 +1,10 @@
-<?php
-$host  = $_SERVER['HTTP_HOST'];
-$uri   = rtrim(dirname($_SERVER['PHP_SELF']), '/\\');
-header("Location: http://$host$uri/");
-$myfile = fopen("assets/php/visits.int", "r") or die("Unable to open file!");
-gloabal $visitors = fread($myfile,filesize("assets/php/visits.int"));
-fclose($myfile);
-setcookie ( "VisitorCookie", ++$visitors, time()+60*60*24*30, "cmc_cookie/", "christophermcarthur.com", fals, false)
-?>
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Portfolio - Christopher McArthur</title>
+		<title>Portfolio - Christopher McArthur Coop Concodia Montreal</title>
+        <meta name="author" content="Christopher McArthur"/>
+        <meta name="description" content="Curious to who Christopher McArthur is? Look no farther, this apge is a sample of my portfolio. Like what you see? feel free to contact me and ask to see the full collection."/>
+        <meta name="keywords" content="chris christopher mcarthur"/>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -24,7 +18,7 @@ setcookie ( "VisitorCookie", ++$visitors, time()+60*60*24*30, "cmc_cookie/", "ch
         
         <!-- Header -->
 			<header id="header">
-				<h1><a href="index.html">Christopher McArthur - <?php echo $visitors?></a></h1>
+				<h1><a href="index.html">Christopher McArthur</a></h1>
 				<a href="#nav">Menu</a>
 			</header>
 
@@ -34,11 +28,12 @@ setcookie ( "VisitorCookie", ++$visitors, time()+60*60*24*30, "cmc_cookie/", "ch
               <li><a class="icon fa-home" href="index.html">  Home</a></li>
               <li><a class="icon fa-code" href="Website%20Development.html">  Website Development</a></li>
               <li><a class="icon fa-file-o" href="generic.html">  Resume</a></li>
-              <li><a href="construction.html">My Bio</a></li>
+              <li><a class="fa-user" href="construction.html">  Biography</a></li>
               <li><a class="icon fa-photo" href="portfolio.html">  Portfolio</a></li>
-              <li><a href="construction.html">Robotics</a></li>
-              <li><a href="https://github.com/prince-chrismc/" class="icon fa-github">  Github</a></li>
-              <li><a href="https://ca.linkedin.com/in/ChristopherMcArthur1996" class="icon fa-linkedin">  LinkedIn</a></li>
+              <li><a class="fa-cogs" href="construction.html">  Robotics</a></li>
+              <li><a class="icon fa-paper-plane-o" href="index.html#contact">  Contact</a></li>
+              <li><a class="icon fa-github" href="https://github.com/prince-chrismc/" >  Github</a></li>
+              <li><a class="icon fa-linkedin" href="https://ca.linkedin.com/in/ChristopherMcArthur1996" >  LinkedIn</a></li>
             </ul>
         </nav>
         
@@ -59,8 +54,8 @@ setcookie ( "VisitorCookie", ++$visitors, time()+60*60*24*30, "cmc_cookie/", "ch
                             data-45p="opacity: 0; transform:translate(0px,250%);"
                             data-anchor-target="#helper"
                         >
-                            <h1>Image 1 Title</h1>
-                            <p>Image description goes here.</p>
+                            <h1>Montreal</h1>
+                            <p>Seaview of the city I grew up in.</p>
                         </div>
                     </div>
                     <div id="slide-2" class="slide">
@@ -71,18 +66,20 @@ setcookie ( "VisitorCookie", ++$visitors, time()+60*60*24*30, "cmc_cookie/", "ch
                             data-280p="opacity: 0; transform:translate(-100px,0px);"
                             data-anchor-target="#helper"
                         >
-                            <h1>Image 2 Title</h1>
-                            <p>Image description goes here.</p>
+                            <h1>Stock Photo</h1>
+                            <p>My old banner.</p>
                         </div>
                     </div>
                     <div id="slide-3" class="slide">
                         <div class="caption"
                             data-250p="opacity: 0; transform:translate(300px,0px);"
                             data-300p="opacity: 1; transform:translate(0px,0px);"
+                            data-325p=""
+                            data-400p="opacity: 0; transform:translate(-500px,0px);"
                             data-anchor-target="#helper"
                         >
-                            <h1>Image 3 Title</h1>
-                            <p>Image description goes here.</p>
+                            <h1>Raccon</h1>
+                            <p>She wasn't happy!</p>
                         </div>
                     </div>
                     <div id="slide-4" class="slide">
@@ -91,8 +88,8 @@ setcookie ( "VisitorCookie", ++$visitors, time()+60*60*24*30, "cmc_cookie/", "ch
                             data-450p="opacity: 1;"
                             data-anchor-target="#helper"
                         >
-                            <h1>Image 4 Title</h1>
-                            <p>Image description goes here.</p>
+                            <h1>My Cover Letter</h1>
+                            <p>A sample of my application.</p>
                         </div>
                     </div>
                 </div>
