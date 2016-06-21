@@ -17,21 +17,23 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script>
-              $(function() {
-                $('a[href*="#"]:not([href="#"])').click(function() {
-                  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                    if (target.length) {
-                      $('html, body').animate({
-                        scrollTop: target.offset().top - 75
-                      }, 1000);
-                      return false;
-                    }
-                  }
+              $(document).ready(function() {
+                // navigation click actions	
+                $('.scroll-link').on('click', function(event){
+                    event.preventDefault();
+                    var sectionID = $(this).attr("data-id");
+                    scrollToID('#' + sectionID, 1500);
                 });
-              });
-	</script>
+            });
+            
+            // scroll function
+            function scrollToID(id, speed){
+                var offSet = 75;
+                var targetOffset = $(id).offset().top - offSet;
+                $('html,body').animate({scrollTop:targetOffset}, speed);
+                }
+            </script>
+
 	</head>
 	<body class="landing"> 
 
@@ -73,18 +75,18 @@
                     <p>It's been a long while since I have updated this mini blog but I was soo busy not enough has gotten done. regardless of that today - june 21st - I am pleased to annoce this little project worked! I landed myself a fall internship doing c++ work in a graphics company's video department. Now what have I done here? It feels like everything.. Ill start with what did not work out soo well. Github pages hosting method only does static pages; so all the php work I did was useless. Thankfully for me my <a href="index.html#contact">contact me</a> form was still possible, I came across <a href="https://formspree.io/">Formspree</a> which was made to solve my exact problem and with this I made a "thank you" page similar to my under construction page. Unfortunately the skrollr effect on both of these has fallen flat so they are just static pages. My portfolio page has been a long process but hopefully ill be able to post the new 27 picture page; I have mapped out my layout picked my effects its just a matter of working out the kinks debugging fixing etc. website development got renamed to webDev so it would be easier for me to post to github. Beyond that, i added a bunch of random code I had to make this semester in my Data Structures and Algorithms class. The class was in java but I wrote some in C++ because that was easier for me to work with. So it would be easier to navigate I added little button to quick scroll down to each section with jQuery!! Also because I need everthing to look good, I played with some code pretty from google with some fun themes to theme though the tabs are way off because of it =/ My robotics page has started to take shape; using bootstrap's carousel i got a nice one going and ive began to write all that content which is quiet a bite thank fully my mom kept all the pictures she took soo I'm still debating how im going to use all or some of them. The nav has gotten a few updates... more options and a couple styling queys I added for fun. </p>
                     
                     <h3>Here's some <em>random code</em> samples from my ADT class</h3>
-                    <div class="row">
-				        <div class="6u 12u$(xsmall)" style="width: 100%;">
-							<ul class="actions fit">
-								<li><a href="#iterate" class="button alt fit small">Python Deck Sort</a></li>
-								<li><a href="#inorder" class="button alt fit small">Java Tree Builder</a></li>
-                                <li><a href="#preorder" class="button alt fit small">C++ Tree Builder</a></li>
-                                <li><a href="#doubly" class="button alt fit small">C++ LinkedList </a></li>
+                    <div class="row" >
+				        <div class="3u 6u(small) 12u$(xsmall)">
+							<ul class="actions vertical">
+								<li><a class="button special fit small scroll-link" data-id="iterate">Python Deck Sort</a></li>
+								<li><a class="button special fit small scroll-link" data-id="inorder">Java Tree Builder</a></li>
+                                <li><a class="button special fit small scroll-link" data-id="preorder">C++ Tree Builder</a></li>
+                                <li><a class="button special fit small scroll-link" data-id="doubly">C++ LinkedList </a></li>
 							</ul>
 						</div>
 				    </div>
                     
-                    <h5 id="iterate">Deck Sorting Iterator</h5>
+                    <h5 id="iterate">Python Deck Sorting Iterator</h5>
                     <pre><code  class="prettyprint">i = 0;<br>while (!deck.isInOrder())<br>{<br>     print 'Iteration ' + i;<br>     deck.shuffle();<br>     i++;<br>}<br>print 'It took ' + i + ' iterations to sort the deck.';</code></pre><br/>
                     
                     <h5 id="inorder">Java Inorder and Preorder Tree Builder</h5>
@@ -429,7 +431,6 @@ int main()
 	}
 	return 0;
 }</code></pre>
-                    
                 </div>
         </section>
 
