@@ -45,6 +45,7 @@
 
 code{
     color: black;
+    font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
 }
 /* ------ START OF THEME ------ */
 /*
@@ -1825,7 +1826,7 @@ pre.theme-frontier-contrast .fun {
 		border-radius: 4px;
 		border-style: solid;
 		border-width: 1px;
-		font-family: "Courier New", monospace;
+		font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -1836,6 +1837,7 @@ pre.theme-frontier-contrast .fun {
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
+        border: 0px !important;
 	}
 
 		pre code {
