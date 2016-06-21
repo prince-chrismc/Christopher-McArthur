@@ -16,6 +16,24 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>
+              $(document).ready(function() {
+                // navigation click actions	
+                $('.scroll-link').on('click', function(event){
+                    event.preventDefault();
+                    var sectionID = $(this).attr("data-id");
+                    scrollToID('#' + sectionID, 1500);
+                });
+            });
+            
+            // scroll function
+            function scrollToID(id, speed){
+                var offSet = 75;
+                var targetOffset = $(id).offset().top - offSet;
+                $('html,body').animate({scrollTop:targetOffset}, speed);
+                }
+            </script>
+
 	</head>
 	<body class="landing"> 
 
@@ -49,19 +67,33 @@
 					</header>
 					<a class="image fit"><img src="images/photo-code.jpe" alt="" /></a>
                     
-                    <h4> It all started with a long bus and metro ride being stuck in traffic...</h4>
-                    <blockquote>"hey, I wonder if I can make a website."</blockquote> 
-                    <p><span class="image left"><img src="images/Site_one.png" alt="" /><img src="images/Site_two.png" alt="" /><img src="images/Site_three.png" alt="" /><img src="images/seo%20results.png" alt=""/></span>So a quick Google and a stop to <a href="http://www.w3schools.com/html/">W3School HTML</a> and I was off. <code>cout >> "This is my First Webpage";</code> Thats where my problem started! As an artistic person with an OCD nature for visually appleasing sights, I couldnt not leave it as a black and white... soo i moved to a CSS tutorial and began looking at website i thought looked nice and checked out what they had behind the sense. Next version was nicer with a menu but my stylesheet was in my html doc.</p>
-                    <p>I learn best by example. Watching my dad doing oil changes, changing tires, brakes, etc; at work to learn internal systems and procedures. The same held for this website, after looking at tutorials and trying to develope an understanding of css I came across <a href="templated.co">TEMPLATED</a> where I came across a theme which suited my needs quiet well. Building from this I disected the code, changed elements to reflect myself; Through this I was Finally able to understand enough to rebuildand strip the site down to its components and build it the way i like it from the ground up. Hoping that whoing off my website will get me the change to rebuild a notary's website (family connection) so I can gain some relevent work experience!</p>
-                    <p>about to update my git for pretty much everything, may 30th 11pm, before bed and i just wanted to write a blurb as a summation of what ive done lately. Across all the pages, the menu nav got an update it went from black to the teal i have on my buttons and i added fontawesome icons to the list, just out my personal pages and added my github and linkedin to it(run on sentence). index page is untouch fixed a few typos but i know there's more proof reading will come later. main css, cutting out the slides show i tried to make and replaced it with a skrollr page, its only 4 pictures one being a download but i got the works and im quiet impressed with myself i must admit. off my skrollr addition i made a consturction page, some of my links have been broken up to this point and that was very unprofessional so i makde a costume slides for that, it will be finished in the coming days as i havent added my helper to let it work. lastly for html page updates this one got bootstrap for the resizing help, did a lot manually but it wasnt perfect, there was lots of formatting isues soo it will be hard to put it across all pages. oh yes my php work has began! but its off to a slow start ive been playing with it on my portfolio page as well as string to do the submit button on index- its falling behind because i havent finished content which is never ending since i keep coming up with new ideas. Stay tuned for more updates! Oh i forgot also i need to add all my c++/OOP/.net work to github</p>
-                    <p>about to update my git for pretty much everything, may 30th 11pm, before bed and i just wanted to write a blurb as a summation of what ive done lately. Across all the pages, the menu nav got an update it went from black to the teal i have on my buttons and i added fontawesome icons to the list, just out my personal pages and added my github and linkedin to it(run on sentence). index page is untouch fixed a few typos but i know there's more proof reading will come later. main css, cutting out the slides show i tried to make and replaced it with a skrollr page, its only 4 pictures one being a download but i got the works and im quiet impressed with myself i must admit. off my skrollr addition i made a consturction page, some of my links have been broken up to this point and that was very unprofessional so i makde a costume slides for that, it will be finished in the coming days as i havent added my helper to let it work. lastly for html page updates this one got bootstrap for the resizing help, did a lot manually but it wasnt perfect, there was lots of formatting isues soo it will be hard to put it across all pages. oh yes my php work has began! but its off to a slow start ive been playing with it on my portfolio page as well as string to do the submit button on index- its falling behind because i havent finished content which is never ending since i keep coming up with new ideas. Stay tuned for more updates! Oh i forgot also i need to add all my c++/OOP/.net work to github</p>
+                    <h4> It all started with a long bus and metro ride being stuck in traffic</h4>
+                    <blockquote>"Hummmm...<br/>Hey, I wonder if I can make a website. I Do need to compete with the software engineering kids in my class..."</blockquote> 
+                    <p><span class="image left"><img src="images/Site_one.png" alt="" /><img src="images/Site_two.png" alt="" /><img src="images/Site_three.png" alt="" /><img src="images/seo%20results.png" alt=""/></span>So a quick Google and a stop to <a href="http://www.w3schools.com/html/">W3School's HTML tutorial</a> and I was off. <code>cout &#60;&#60; "This is my First Webpage";</code> Thats where my problem started! As an artistic individual with an OCD nature for everything being visually appleasing, I could not not leave it as a black and white page... soo I moved to the <a href="http://www.w3schools.com/css/">CSS tutorial</a> and began looking at website I thought looked nice and checked out what they had behind the sense for styling. Next version was nicer with a menu but my stylesheet was in my html doc and still nothing eyecatching.</p>
+                    <p>I learn best by example. Watching my dad doing oil changes, changing tires, brakes, etc; at work to learn internal systems and procedures, I watched my co-workers. The same held for this website, after looking at tutorials and trying to develope an understanding of css I came across <a href="templated.co">TEMPLATED</a> where I came across a theme which suited my needs quiet well. Building from this I disected the code, changed elements to reflect my style; Through this I was finally able to understand enough to rebuild and strip the site down to its components and build it the way I like it from the ground up. Hoping that showing off my website will get me the chance to rebuild a notary's website (family connection) so I can gain some relevent work experience!</p>
+                    <p>aI'm about to update my github <a href="https://github.com/prince-chrismc/Christopher-McArthur">repository</a> for pretty much everything - on may 30th 11pm - before bed and I just wanted to write a blurb as a summation of what i have done lately. Across all the pages, the menu nav got an update it went from black to the teal i have on my buttons and I added fontawesome icons to the list, just out my personal pages and added my github and linkedin to it ( this is a run on sentence). index page is namely untouched, just fixed a few typos but i know there's more proof reading will come later. main css, cutting out the slides show i tried to make and replaced it with a skrollr page, its only 4 pictures one being a download but I got the works and I'm quiet impressed with myself I must admit. off my skrollr addition I made a consturction page, some of my links have been broken up to this point and that was very unprofessional so I made a costume slides for that, it will be finished in the coming days as I haven't added my helper to let it work. lastly for html page updates this one got bootstrap for the resizing help, did a lot manually but it wasnt perfect, there was lots of formatting isues soo it will be hard to put it across all pages. oh yes my php work has began! but its off to a slow start ive been playing with it on my portfolio page as well as string to do the submit button on index- its falling behind because I havent finished content which is never ending since i keep coming up with new ideas. Stay tuned for more updates! Oh I forgot also I need to add all my c++/OOP/.net work to github</p>
+                    <p>It's been a long while since I have updated this mini blog but I was soo busy not enough has gotten done. regardless of that today - june 21st - I am pleased to annoce this little project worked! I landed myself a fall internship doing c++ work in a graphics company's video department. Now what have I done here? It feels like everything.. Ill start with what did not work out soo well. Github pages hosting method only does static pages; so all the php work I did was useless. Thankfully for me my <a href="index.html#contact">contact me</a> form was still possible, I came across <a href="https://formspree.io/">Formspree</a> which was made to solve my exact problem and with this I made a "thank you" page similar to my under construction page. Unfortunately the skrollr effect on both of these has fallen flat so they are just static pages. My portfolio page has been a long process but hopefully ill be able to post the new 27 picture page; I have mapped out my layout picked my effects its just a matter of working out the kinks debugging fixing etc. website development got renamed to webDev so it would be easier for me to post to github. Beyond that, i added a bunch of random code I had to make this semester in my Data Structures and Algorithms class. The class was in java but I wrote some in C++ because that was easier for me to work with. So it would be easier to navigate I added little button to quick scroll down to each section with jQuery!! Also because I need everthing to look good, I played with some code pretty from google with some fun themes to theme though the tabs are way off because of it =/ My robotics page has started to take shape; using bootstrap's carousel i got a nice one going and ive began to write all that content which is quiet a bite thank fully my mom kept all the pictures she took soo I'm still debating how im going to use all or some of them. The nav has gotten a few updates... more options and a couple styling queys I added for fun. </p>
                     
+                    <h3>Here's some <em>random code</em> samples from my ADT class</h3>
+                    <div class="row" >
+				        <div class="3u 6u(small) 12u$(xsmall)">
+							<ul class="actions vertical">
+								<li><a class="button special fit small scroll-link" data-id="iterate">Python Deck Sort</a></li>
+								<li><a class="button special fit small scroll-link" data-id="inorder">Java Tree Builder</a></li>
+                                <li><a class="button special fit small scroll-link" data-id="preorder">C++ Tree Builder</a></li>
+                                <li><a class="button special fit small scroll-link" data-id="doubly">C++ LinkedList </a></li>
+							</ul>
+						</div>
+				    </div>
                     
-                    <pre>Random code!<code class="prettyprint">i = 0;<br><br>while (!deck.isInOrder())<br>{<br>     print 'Iteration ' + i;<br>     deck.shuffle();<br>     i++;<br>}<br>print 'It took ' + i + ' iterations to sort the deck.';</code></pre><br/>
-<pre class="prettyprint theme-github"><code class="prettyprint">public class MakeTreefromInorderAndPreorder
+                    <h5 id="iterate">Python Deck Sorting Iterator</h5>
+                    <pre><code  class="prettyprint">i = 0;<br>while (!deck.isInOrder())<br>{<br>     print 'Iteration ' + i;<br>     deck.shuffle();<br>     i++;<br>}<br>print 'It took ' + i + ' iterations to sort the deck.';</code></pre><br/>
+                    
+                    <h5 id="inorder">Java Inorder and Preorder Tree Builder</h5>
+<pre class="prettyprint theme-github"><code>public class MakeTreefromInorderAndPreorder
 {
     public static int pIndex=0;
-    public Node makeBTree(int [] inOrder, int [] preOrder, int iStart, int iEnd )
+    public Node makeBTree(int[] inOrder, int[] preOrder, int iStart, int iEnd )
     {
         if(iStart>iEnd)
         {
@@ -81,7 +113,7 @@
     
 	public int getInorderIndex(int [] inOrder, int start, int end, int data)
     {
-		for(int i=start; i==end; i++)
+		for(int i=start; i&#60;=end; i++)
         {
 			if(inOrder[i]==data)
             {
@@ -107,7 +139,7 @@
 		int [] preOrder = {10,5,2,6,14,12,15};
 		MakeTreefromInorderAndPreorder  i = new MakeTreefromInorderAndPreorder();
 		Node x = i.makeBTree(inOrder, preOrder, 0, inOrder.length-1);
-		System.out.println("Constructed Tree : ");
+		System.out.println("Constructed Tree: ");
 		i.printINORDER(x);
 	}
 }
@@ -123,11 +155,10 @@ class Node
 		left = null;
 		right = null;
 	}
-}</code>
-</pre>
-now here's me c++ version so i can solve my hw =D
-<pre>
-<code class="prettyprint">/* program to construct tree using inorder and preorder traversals */
+}</code></pre>
+                    
+<h5 id="preorder">C++ Inorder And Preorder Tree Builder</h5>
+<pre class="prettyprint"><code>/* program to construct tree using inorder and preorder traversals */
 #include stdio.h 
 #include stdlib.h 
  
@@ -234,11 +265,9 @@ int main()
   printf("Inorder traversal of the constructed tree is \n");
   printInorder(root);
   getchar();
-}</code>
-</pre>
-<pre class="prettyprint theme-frontier-contrast">
-<code>
-#include&#60;&#60;iostream>
+}</code></pre>
+                    <h5  id="doubly" >C++ double linked list</h5>
+<pre class="prettyprint theme-frontier-contrast"><code>#include &#60;iostream>
 using namespace std;
 
 /* Linked list structure */
@@ -401,10 +430,7 @@ int main()
 		}
 	}
 	return 0;
-}
-</code>
-</pre>
-                    
+}</code></pre>
                 </div>
         </section>
 
