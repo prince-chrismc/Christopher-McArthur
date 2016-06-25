@@ -4507,7 +4507,7 @@ html, body {
  
 /* double the height/width of a viewport */
 #slides {
-    width: 100%;
+    width: 101%;
     height: 99%;
     position: fixed;
     top: 0;
@@ -4597,9 +4597,9 @@ html, body {
 #slide-9 {
     background: url('../../images/pic08.jpg');
     background-size: cover;
-    -webkit-transform: translate(200%,100%);
-    -ms-transform: translate (200%,100%);
-    transform: translate(200%,100%):
+    -webkit-transform: translate(200%,200%);
+    -ms-transform: translate (200%,200%);
+    transform: translate(200%,200%):
 }
 
 #slide-cons{
