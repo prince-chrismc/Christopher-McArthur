@@ -4,95 +4,79 @@
 		<title>Website Development - Christopher McArthur Coop Concodia Montreal</title>
         <meta name="author" content="Christopher McArthur"/>
         <meta name="description" content="Curious to who Christopher McArthur is? Look no farther, This page is a blog style of <p/> where ever few weeks i just write out what ive done on my website. Random code too because I duuno why xD"/>
-        <meta name="keywords" content="chris christopher mcarthur"/>
+        <meta name="keywords" content="chris christopher mcarthur programming coding web design development"/>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		
+        <!-- CSS -->
         <link rel="stylesheet" href="assets/css/normalize.css"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="shortcut icon" href="images/webcode_icon.ico"/>
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>
-              $(document).ready(function() {
-                // navigation click actions	
-                $('.scroll-link').on('click', function(event){
-                    event.preventDefault();
-                    var sectionID = $(this).attr("data-id");
-                    scrollToID('#' + sectionID, 1500);
-                });
-            });
-            
-            // scroll function
-            function scrollToID(id, speed){
-                var offSet = 75;
-                var targetOffset = $(id).offset().top - offSet;
-                $('html,body').animate({scrollTop:targetOffset}, speed);
-                }
-            </script>
-
-	</head>
-	<body class="landing"> 
-
-		<!-- Header -->
-			<header id="header">
-				<h1><a href="index.html">Christopher McArthur</a></h1>
-				<a href="#nav">Menu</a>
-			</header>
-
-		<!-- Nav -->
-			<nav id="nav">
-		  <ul class="links">
-              <li><a class="icon fa-home" href="index.html">  Home</a></li>
-              <li><a class="icon fa-code" href="webDev.html">  Website Development</a></li>
-              <li><a class="icon fa-file-o" href="images/CV%202016%20coop.pdf">  Resume</a></li>
-              <li><a class="icon fa-user" href="construction.html">  Biography</a></li>
-              <li><a class="icon fa-photo" href="portfolio.html">  Portfolio</a></li>
-              <li><a class="icon fa-cogs" href="construction.html">  Robotics</a></li>
-              <li><a class="icon fa-paper-plane-o" href="index.html#contact">  Contact</a></li>
-              <li><a class="icon fa-github" href="https://github.com/prince-chrismc/" >  Github</a></li>
-              <li><a class="icon fa-linkedin" href="https://ca.linkedin.com/in/ChristopherMcArthur1996" >  LinkedIn</a></li>
-            </ul>
-        </nav>
         
-       		<!-- Main -->
-			<section id="main" class="wrapper">
-				<div class="container">
-					<header class="major special">
-						<h2>The Creative Process</h2>
-						<p>Here is my Journey through the learning curve for web development</p>
-					</header>
-					<a class="image fit"><img src="images/photo-code.jpe" alt="" /></a>
+        <!-- Web Icon -->
+        <link rel="shortcut icon" href="images/webcode_icon.ico"/>
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </head>
+    
+	<body class="landing"> 
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="index.html">Christopher McArthur</a></h1>
+		<a href="#nav">Menu</a>
+	</header>
+
+    <!-- Nav -->
+	<nav id="nav">
+	    <ul class="links">
+            <li><a class="icon fa-home" href="index.html">  Home</a></li>
+            <li><a class="icon fa-code" href="webDev.html">  Website Development</a></li>
+            <li><a class="icon fa-file-o" href="images/CV%202016%20coop.pdf">  Resume</a></li>
+            <li><a class="icon fa-user" href="construction.html">  Biography</a></li>
+            <li><a class="icon fa-photo" href="portfolio.html">  Portfolio</a></li>
+            <li><a class="icon fa-cogs" href="robotics.html">  Robotics</a></li>
+            <li><a class="icon fa-paper-plane-o" href="index.html#contact">  Contact</a></li>
+            <li><a class="icon fa-github" href="https://github.com/prince-chrismc/" >  Github</a></li>
+            <li><a class="icon fa-linkedin" href="https://ca.linkedin.com/in/ChristopherMcArthur1996" >  LinkedIn</a></li>
+        </ul>
+    </nav>
+        
+    <!-- Main -->
+	<section id="main" class="wrapper">
+	    <div class="container">
+		    <header class="major special">
+                <h2>The Creative Process</h2>
+				<p>Here is my Journey through the learning curve for web development</p>
+            </header>
+			<a class="image fit"><img src="images/photo-code.jpe" alt="christopher mcarthur chris mcarthur montreal concordia - default stock photo of html code" /></a>
+            <h4> It all started with a long bus and metro ride being stuck in traffic</h4>
+            <blockquote>"Hummmm...<br/>Hey, I wonder if I can make a website. I Do need to compete with the software engineering kids in my class..."</blockquote> 
+            <p><span class="image left"><img src="images/Site_one.png" alt="christopher mcarthur chris mcarthur montreal concordia - first attempt at html" /><img src="images/Site_two.png" alt="christopher mcarthur chris mcarthur montreal concordia - second attempt with some html" /><img src="images/Site_three.png" alt="christopher mcarthur chris mcarthur montreal concordia - third version a fragment of what it is now" /><img src="images/seo%20results.png" alt=" christopher mcarthur chris mcarthur montreal concordia - results of my never ending seo work"/></span>So a quick Google and a stop to <a href="http://www.w3schools.com/html/">W3School's HTML tutorial</a> and I was off. <code>cout &#60;&#60; "This is my First Webpage";</code> Thats where my problem started! As an artistic individual with an OCD nature for everything being visually appleasing, I could not not leave it as a black and white page... soo I moved to the <a href="http://www.w3schools.com/css/">CSS tutorial</a> and began looking at website I thought looked nice and checked out what they had behind the sense for styling. Next version was nicer with a menu but my stylesheet was in my html doc and still nothing eyecatching.</p>
+            <p>I learn best by example. Watching my dad doing oil changes, changing tires, brakes, etc; at work to learn internal systems and procedures, I watched my co-workers. The same held for this website, after looking at tutorials and trying to develope an understanding of css I came across <a href="templated.co">TEMPLATED</a> where I came across a theme which suited my needs quiet well. Building from this I disected the code, changed elements to reflect my style; Through this I was finally able to understand enough to rebuild and strip the site down to its components and build it the way I like it from the ground up. Hoping that showing off my website will get me the chance to rebuild a notary's website (family connection) so I can gain some relevent work experience!</p>
+            <p>aI'm about to update my github <a href="https://github.com/prince-chrismc/Christopher-McArthur">repository</a> for pretty much everything - on may 30th 11pm - before bed and I just wanted to write a blurb as a summation of what i have done lately. Across all the pages, the menu nav got an update it went from black to the teal i have on my buttons and I added fontawesome icons to the list, just out my personal pages and added my github and linkedin to it ( this is a run on sentence). index page is namely untouched, just fixed a few typos but i know there's more proof reading will come later. main css, cutting out the slides show i tried to make and replaced it with a skrollr page, its only 4 pictures one being a download but I got the works and I'm quiet impressed with myself I must admit. off my skrollr addition I made a consturction page, some of my links have been broken up to this point and that was very unprofessional so I made a costume slides for that, it will be finished in the coming days as I haven't added my helper to let it work. lastly for html page updates this one got bootstrap for the resizing help, did a lot manually but it wasnt perfect, there was lots of formatting isues soo it will be hard to put it across all pages. oh yes my php work has began! but its off to a slow start ive been playing with it on my portfolio page as well as string to do the submit button on index- its falling behind because I havent finished content which is never ending since i keep coming up with new ideas. Stay tuned for more updates! Oh I forgot also I need to add all my c++/OOP/.net work to github</p>
+            <p>It's been a long while since I have updated this mini blog but I was soo busy not enough has gotten done. regardless of that today - june 21st - I am pleased to annoce this little project worked! I landed myself a fall internship doing c++ work in a graphics company's video department. Now what have I done here? It feels like everything.. Ill start with what did not work out soo well. Github pages hosting method only does static pages; so all the php work I did was useless. Thankfully for me my <a href="index.html#contact">contact me</a> form was still possible, I came across <a href="https://formspree.io/">Formspree</a> which was made to solve my exact problem and with this I made a "thank you" page similar to my under construction page. Unfortunately the skrollr effect on both of these has fallen flat so they are just static pages. My portfolio page has been a long process but hopefully ill be able to post the new 27 picture page; I have mapped out my layout picked my effects its just a matter of working out the kinks debugging fixing etc. website development got renamed to webDev so it would be easier for me to post to github. Beyond that, i added a bunch of random code I had to make this semester in my Data Structures and Algorithms class. The class was in java but I wrote some in C++ because that was easier for me to work with. So it would be easier to navigate I added little button to quick scroll down to each section with jQuery!! Also because I need everthing to look good, I played with some code pretty from google with some fun themes to theme though the tabs are way off because of it =/ My robotics page has started to take shape; using bootstrap's carousel i got a nice one going and ive began to write all that content which is quiet a bite thank fully my mom kept all the pictures she took soo I'm still debating how im going to use all or some of them. The nav has gotten a few updates... more options and a couple styling queys I added for fun. </p>
                     
-                    <h4> It all started with a long bus and metro ride being stuck in traffic</h4>
-                    <blockquote>"Hummmm...<br/>Hey, I wonder if I can make a website. I Do need to compete with the software engineering kids in my class..."</blockquote> 
-                    <p><span class="image left"><img src="images/Site_one.png" alt="" /><img src="images/Site_two.png" alt="" /><img src="images/Site_three.png" alt="" /><img src="images/seo%20results.png" alt=""/></span>So a quick Google and a stop to <a href="http://www.w3schools.com/html/">W3School's HTML tutorial</a> and I was off. <code>cout &#60;&#60; "This is my First Webpage";</code> Thats where my problem started! As an artistic individual with an OCD nature for everything being visually appleasing, I could not not leave it as a black and white page... soo I moved to the <a href="http://www.w3schools.com/css/">CSS tutorial</a> and began looking at website I thought looked nice and checked out what they had behind the sense for styling. Next version was nicer with a menu but my stylesheet was in my html doc and still nothing eyecatching.</p>
-                    <p>I learn best by example. Watching my dad doing oil changes, changing tires, brakes, etc; at work to learn internal systems and procedures, I watched my co-workers. The same held for this website, after looking at tutorials and trying to develope an understanding of css I came across <a href="templated.co">TEMPLATED</a> where I came across a theme which suited my needs quiet well. Building from this I disected the code, changed elements to reflect my style; Through this I was finally able to understand enough to rebuild and strip the site down to its components and build it the way I like it from the ground up. Hoping that showing off my website will get me the chance to rebuild a notary's website (family connection) so I can gain some relevent work experience!</p>
-                    <p>aI'm about to update my github <a href="https://github.com/prince-chrismc/Christopher-McArthur">repository</a> for pretty much everything - on may 30th 11pm - before bed and I just wanted to write a blurb as a summation of what i have done lately. Across all the pages, the menu nav got an update it went from black to the teal i have on my buttons and I added fontawesome icons to the list, just out my personal pages and added my github and linkedin to it ( this is a run on sentence). index page is namely untouched, just fixed a few typos but i know there's more proof reading will come later. main css, cutting out the slides show i tried to make and replaced it with a skrollr page, its only 4 pictures one being a download but I got the works and I'm quiet impressed with myself I must admit. off my skrollr addition I made a consturction page, some of my links have been broken up to this point and that was very unprofessional so I made a costume slides for that, it will be finished in the coming days as I haven't added my helper to let it work. lastly for html page updates this one got bootstrap for the resizing help, did a lot manually but it wasnt perfect, there was lots of formatting isues soo it will be hard to put it across all pages. oh yes my php work has began! but its off to a slow start ive been playing with it on my portfolio page as well as string to do the submit button on index- its falling behind because I havent finished content which is never ending since i keep coming up with new ideas. Stay tuned for more updates! Oh I forgot also I need to add all my c++/OOP/.net work to github</p>
-                    <p>It's been a long while since I have updated this mini blog but I was soo busy not enough has gotten done. regardless of that today - june 21st - I am pleased to annoce this little project worked! I landed myself a fall internship doing c++ work in a graphics company's video department. Now what have I done here? It feels like everything.. Ill start with what did not work out soo well. Github pages hosting method only does static pages; so all the php work I did was useless. Thankfully for me my <a href="index.html#contact">contact me</a> form was still possible, I came across <a href="https://formspree.io/">Formspree</a> which was made to solve my exact problem and with this I made a "thank you" page similar to my under construction page. Unfortunately the skrollr effect on both of these has fallen flat so they are just static pages. My portfolio page has been a long process but hopefully ill be able to post the new 27 picture page; I have mapped out my layout picked my effects its just a matter of working out the kinks debugging fixing etc. website development got renamed to webDev so it would be easier for me to post to github. Beyond that, i added a bunch of random code I had to make this semester in my Data Structures and Algorithms class. The class was in java but I wrote some in C++ because that was easier for me to work with. So it would be easier to navigate I added little button to quick scroll down to each section with jQuery!! Also because I need everthing to look good, I played with some code pretty from google with some fun themes to theme though the tabs are way off because of it =/ My robotics page has started to take shape; using bootstrap's carousel i got a nice one going and ive began to write all that content which is quiet a bite thank fully my mom kept all the pictures she took soo I'm still debating how im going to use all or some of them. The nav has gotten a few updates... more options and a couple styling queys I added for fun. </p>
+            <h3>Here's some <em>random code</em> samples from my ADT class</h3>
+            <div class="row" >
+                <div class="3u 6u(small) 12u$(xsmall)">
+					<ul class="actions vertical">
+					    <li><a class="button special fit small scroll-link" data-id="iterate">Python Deck Sort</a></li>
+						<li><a class="button special fit small scroll-link" data-id="inorder">Java Tree Builder</a></li>
+                        <li><a class="button special fit small scroll-link" data-id="preorder">C++ Tree Builder</a></li>
+                        <li><a class="button special fit small scroll-link" data-id="doubly">C++ LinkedList </a></li>
+				    </ul>
+				</div>
+            </div>
                     
-                    <h3>Here's some <em>random code</em> samples from my ADT class</h3>
-                    <div class="row" >
-				        <div class="3u 6u(small) 12u$(xsmall)">
-							<ul class="actions vertical">
-								<li><a class="button special fit small scroll-link" data-id="iterate">Python Deck Sort</a></li>
-								<li><a class="button special fit small scroll-link" data-id="inorder">Java Tree Builder</a></li>
-                                <li><a class="button special fit small scroll-link" data-id="preorder">C++ Tree Builder</a></li>
-                                <li><a class="button special fit small scroll-link" data-id="doubly">C++ LinkedList </a></li>
-							</ul>
-						</div>
-				    </div>
-                    
-                    <h5 id="iterate">Python Deck Sorting Iterator</h5>
-                    <pre><code  class="prettyprint">i = 0;<br>while (!deck.isInOrder())<br>{<br>     print 'Iteration ' + i;<br>     deck.shuffle();<br>     i++;<br>}<br>print 'It took ' + i + ' iterations to sort the deck.';</code></pre><br/>
-                    
-                    <h5 id="inorder">Java Inorder and Preorder Tree Builder</h5>
-<pre class="prettyprint theme-github"><code>public class MakeTreefromInorderAndPreorder
+            <h5 id="iterate">Python Deck Sorting Iterator</h5>
+            <pre><code  class="prettyprint">i = 0;<br>while (!deck.isInOrder())<br>{<br>     print 'Iteration ' + i;<br>     deck.shuffle();<br>     i++;<br>}<br>print 'It took ' + i + ' iterations to sort the deck.';</code></pre><br/>
+                
+            <h5 id="inorder">Java Inorder and Preorder Tree Builder</h5>
+            <pre class="prettyprint theme-github"><code>public class MakeTreefromInorderAndPreorder
 {
     public static int pIndex=0;
+    
     public Node makeBTree(int[] inOrder, int[] preOrder, int iStart, int iEnd )
     {
         if(iStart>iEnd)
@@ -110,51 +94,52 @@
         }
         return root;
     }
-    
-	public int getInorderIndex(int [] inOrder, int start, int end, int data)
+
+    public int getInorderIndex(int [] inOrder, int start, int end, int data)
     {
-		for(int i=start; i&#60;=end; i++)
+        for(int i=start; i&#60;=end; i++)
         {
-			if(inOrder[i]==data)
+            if(inOrder[i]==data)
             {
-				return i;
-			}
-		}
-		return -1;
-	}
+                return i;
+            }
+        }
+        return -1;
+    }
     
-	public void printINORDER(Node root)
+    public void printINORDER(Node root)
     {
-		if(root!=null)
+        if(root!=null)
         {
-			printINORDER(root.left);
-			System.out.print("  " + root.data);
-			printINORDER(root.right);
-		}
-	}
+            printINORDER(root.left);
+            System.out.print("  " + root.data);
+            printINORDER(root.right);
+        }
+    }
     
-	public static void main (String[] args) throws java.lang.Exception
-	{
-		int [] inOrder = {2,5,6,10,12,14,15};
-		int [] preOrder = {10,5,2,6,14,12,15};
-		MakeTreefromInorderAndPreorder  i = new MakeTreefromInorderAndPreorder();
-		Node x = i.makeBTree(inOrder, preOrder, 0, inOrder.length-1);
-		System.out.println("Constructed Tree: ");
-		i.printINORDER(x);
-	}
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        int [] inOrder = {2,5,6,10,12,14,15};
+        int [] preOrder = {10,5,2,6,14,12,15};
+        MakeTreefromInorderAndPreorder  i = new MakeTreefromInorderAndPreorder();
+        Node x = i.makeBTree(inOrder, preOrder, 0, inOrder.length-1);
+        System.out.println("Constructed Tree: ");
+        i.printINORDER(x);
+    }
 }
 
 class Node
 {
-	int data;
-	Node left;
-	Node right;
-	public Node (int data)
+    int data;
+    Node left;
+    Node right;
+
+    public Node (int data)
     {
-		this.data = data;
-		left = null;
-		right = null;
-	}
+        this.data = data;
+        left = null;
+        right = null;
+    }
 }</code></pre>
                     
 <h5 id="preorder">C++ Inorder And Preorder Tree Builder</h5>
@@ -170,10 +155,6 @@ struct node
     struct node* left;
     struct node* right;
 };
- 
-/* Prototypes for utility functions */
-int search(char arr[], int strt, int end, char value);
-struct node* newNode(char data);
  
 /* Recursive function to construct binary of size len from
    Inorder traversal in[] and Preorder traversal pre[].  Initial values
@@ -191,83 +172,86 @@ struct node* buildTree(char in[], char pre[], int inStrt, int inEnd)
     
     /* Pick current node from Preorder traversal using preIndex
        and increment preIndex */
-  struct node *tNode = newNode(pre[preIndex++]);
+    struct node *tNode = newNode(pre[preIndex++]);
  
-  /* If this node has no children then return */
-  if(inStrt == inEnd)
-  {
+    // If this node has no children then return
+    if(inStrt == inEnd)
+    {
+        return tNode;
+    }
+
+    /* Else find the index of this node in Inorder traversal */
+       int inIndex = search(in, inStrt, inEnd, tNode->data);
+
+    /* Using index in Inorder traversal, construct left and
+       right subtress */
+    tNode->left = buildTree(in, pre, inStrt, inIndex-1);
+    tNode->right = buildTree(in, pre, inIndex+1, inEnd);
+
     return tNode;
-  }
-    
-  /* Else find the index of this node in Inorder traversal */
-  int inIndex = search(in, inStrt, inEnd, tNode->data);
- 
-  /* Using index in Inorder traversal, construct left and
-     right subtress */
-  tNode->left = buildTree(in, pre, inStrt, inIndex-1);
-  tNode->right = buildTree(in, pre, inIndex+1, inEnd);
- 
-  return tNode;
 }
  
-/* UTILITY FUNCTIONS */
+// Prototypes for utility functions 
+int search(char arr[], int strt, int end, char value);
+struct node* newNode(char data); 
+ 
+// UTILITY FUNCTIONS
 /* Function to find index of value in arr[start...end]
    The function assumes that value is present in in[] */
 int search(char arr[], int strt, int end, char value)
 {
-  int i;
-  for(i = strt; i = end; i++)
-  {
-    if(arr[i] == value)
-      return i;
-  }
+    int i;
+    for(i = strt; i = end; i++)
+    {
+        if(arr[i] == value)
+            return i;
+    }
 }
  
 /* Helper function that allocates a new node with the
    given data and NULL left and right pointers. */
 struct node* newNode(char data)
 {
-  struct node* node = (struct node*)malloc(sizeof(struct node));
-  node->data = data;
-  node->left = NULL;
-  node->right = NULL;
- 
-  return(node);
+    struct node* node = (struct node*)malloc(sizeof(struct node));
+    node->data = data;
+    node->left = NULL;
+    node->right = NULL;
+    return(node);
 }
  
 /* This funtcion is here just to test buildTree() */
 void printInorder(struct node* node)
 {
-  if (node == NULL)
-     return;
+    if (node == NULL)
+        return;
  
-  /* first recur on left child */
-  printInorder(node->left);
+    // first recur on left child
+    printInorder(node->left);
  
-  /* then print the data of node */
-  printf("%c ", node->data);
+    // then print the data of node
+    printf("%c ", node->data);
  
-  /* now recur on right child */
-  printInorder(node->right);
+    // now recur on right child
+    printInorder(node->right);
 }
  
-/* Driver program to test above functions */
+// Driver program to test above functions
 int main()
 {
-/*Inorder: S A E U Y Q R P D F K L M
-  Preorder: F A S Q Y E U P R D K L M*/
-  char in[] = {'S', 'A', 'E', 'U', 'Y', 'Q', 'R', 'P', 'D', 'F', 'K', 'L', 'M'};
-  char pre[] = {'F', 'A', 'S', 'Q', 'Y', 'E', 'U', 'P', 'R', 'D', 'K', 'L', 'M'};
-  int len = sizeof(in)/sizeof(in[0]);
-  struct node *root = buildTree(in, pre, 0, len - 1);
+    /* Inorder: S A E U Y Q R P D F K L M
+       Preorder: F A S Q Y E U P R D K L M */
+    char in[] = {'S', 'A', 'E', 'U', 'Y', 'Q', 'R', 'P', 'D', 'F', 'K', 'L', 'M'};
+    char pre[] = {'F', 'A', 'S', 'Q', 'Y', 'E', 'U', 'P', 'R', 'D', 'K', 'L', 'M'};
+    int len = sizeof(in)/sizeof(in[0]);
+    struct node *root = buildTree(in, pre, 0, len - 1);
  
-  /* Let us test the built tree by printing Insorder traversal */
-  printf("Inorder traversal of the constructed tree is \n");
-  printInorder(root);
-  getchar();
+    // Let us test the built tree by printing Insorder traversal
+    printf("Inorder traversal of the constructed tree is \n");
+    printInorder(root);
+    getchar();
 }</code></pre>
-                    <h5  id="doubly" >C++ double linked list</h5>
-<pre class="prettyprint theme-frontier-contrast"><code>#include &#60;iostream>
+            <h5  id="doubly" >C++ double linked list</h5>
+            <pre class="prettyprint theme-frontier-contrast"><code>#include &#60;iostream>
 using namespace std;
 
 /* Linked list structure */
@@ -276,68 +260,70 @@ struct list
 	struct list *prev;
 	int data;
 	struct list *next;
-}   *node = NULL, *first = NULL, *last = NULL, *node1 = NULL, *node2 = NULL;
+}   
+//initializors
+*node = NULL, *first = NULL, *last = NULL, *node1 = NULL, *node2 = NULL;
 
 class linkedlist 
 {
-	public: 
-		/* Function for create/insert node at the beginning of Linked list */
-		void insert_beginning() 
+    public:
+        /* Function for create/insert node at the beginning of Linked list */
+        void insert_beginning()
         {
-			list *addBeg = new list;
+            list *addBeg = new list;
 			cout &#60;&#60; "Enter value for the node:" &#60;&#60; endl;
-			cin >> addBeg->data;
-			if(first == NULL) 
+            cin >> addBeg->data;
+            if(first == NULL)
             {
-				addBeg->prev = NULL;
-				addBeg->next = NULL;
-				first = addBeg;
-				last = addBeg;
-				cout &#60;&#60; "Linked list Created!" &#60;&#60; endl;
-			}
-			else 
+                addBeg->prev = NULL;
+                addBeg->next = NULL;
+                first = addBeg;
+                last = addBeg;
+                cout &#60;&#60; "Linked list Created!" &#60;&#60; endl;
+            }
+            else
             {
-				addBeg->prev = NULL;
-				first->prev = addBeg;
-				addBeg->next = first;
-				first = addBeg;
-				cout &#60;&#60; "Data Inserted at the beginning of the Linked list!" &#60;&#60; endl;
-			}
-		}
+                addBeg->prev = NULL;
+                first->prev = addBeg;
+                addBeg->next = first;
+                first = addBeg;
+                cout &#60;&#60; "Data Inserted at the beginning of the Linked list!" &#60;&#60; endl;
+            }
+        }
 
-		/* Function for create/insert node at the end of Linked list */
-		void insert_end() 
+        /* Function for create/insert node at the end of Linked list */
+        void insert_end()
         {
-			list *addEnd = new list;
-			cout &#60;&#60; "Enter value for the node:" &#60;&#60; endl;
-			cin >> addEnd->data;
-			if(first == NULL) 
+            list *addEnd = new list;
+            cout &#60;&#60; "Enter value for the node:" &#60;&#60; endl;
+            cin >> addEnd->data;
+            if(first == NULL)
             {
-				addEnd->prev = NULL;
-				addEnd->next = NULL;
-				first = addEnd;
-				last = addEnd;
-				cout &#60;&#60; "Linked list Created!" &#60;&#60; endl;
-			}
-			else 
+                addEnd->prev = NULL;
+                addEnd->next = NULL;
+                first = addEnd;
+                last = addEnd;
+                cout &#60;&#60; "Linked list Created!" &#60;&#60; endl;
+            }
+            else 
             {
-				addEnd->next = NULL;
-				last->next = addEnd;
-				addEnd->prev = last;
-				last = addEnd;
-				cout &#60;&#60; "Data Inserted at the end of the Linked list!" &#60;&#60; endl;
-			}
-		}
+                addEnd->next = NULL;
+                last->next = addEnd;
+                addEnd->prev = last;
+                last = addEnd;
+                cout &#60;&#60; "Data Inserted at the end of the Linked list!" &#60;&#60; endl;
+            }
+        }
 
-		/* Function for Display Linked list */
-		void display() 
+        /* Function for Display Linked list */
+        void display() 
         {
-			node = first;
-			cout &#60;&#60; "List of data in Linked list in Ascending order!" &#60;&#60; endl;
-			while(node != NULL) 
+            node = first;
+            cout &#60;&#60; "List of data in Linked list in Ascending order!" &#60;&#60; endl;
+            while(node != NULL) 
             {
-				cout &#60;&#60; node->data &#60;&#60; endl;
-				node = node->next;
+                cout &#60;&#60; node->data &#60;&#60; endl;
+                node = node->next;
 			}
 			node = last;
 			cout &#60;&#60; "List of data in Linked list in Descending order!" &#60;&#60; endl;
@@ -345,91 +331,90 @@ class linkedlist
             {
 				cout &#60;&#60; node->data &#60;&#60; endl;
 				node = node->prev;
-			}
-		}
+            }
+        }
 	
-		/* Function for delete node from Linked list */
-		void del() 
+        /* Function for delete node from Linked list */
+        void del() 
         {
-			int count = 0, number, i;
-			node = node1 = node2 = first;
-			for(node = first; node != NULL; node = node->next)
-				cout &#60;&#60; "Enter value for the node:" &#60;&#60; endl;
-			count++;
-			display();
-			cout &#60;&#60; count &#60;&#60; " nodes available here!" &#60;&#60; endl;
-			cout &#60;&#60; "Enter the node number which you want to delete:" &#60;&#60; endl;
-			cin >> number;
-			if(number != 1) 
+            int count = 0, number, i;
+            node = node1 = node2 = first;
+            for(node = first; node != NULL; node = node->next)
+                cout &#60;&#60; "Enter value for the node:" &#60;&#60; endl;
+            count++;
+            display();
+            cout &#60;&#60; count &#60;&#60; " nodes available here!" &#60;&#60; endl;
+            cout &#60;&#60; "Enter the node number which you want to delete:" &#60;&#60; endl;
+            cin >> number;
+            if(number != 1) 
             {
-				if(number &#60;&#60; count && number > 0) 
+                if(number &#60;&#60; count && number > 0) 
                 {
-					for(i = 2; i &#60;= number; i++)
-						node = node->next;
-					for(i = 2; i &#60;= number-1; i++)
-						node1 = node1->next;
-					for(i = 2; i &#60;= number+1; i++)
-						node2 = node2->next;
-					node2->prev = node1;
-					node1->next = node2;
-					node->prev = NULL;
-					node->next = NULL;
-					node = NULL;
-				}
-				else if(number == count) 
+                    for(i = 2; i &#60;= number; i++)
+                        node = node->next;
+                    for(i = 2; i &#60;= number-1; i++)
+                        node1 = node1->next;
+                    for(i = 2; i &#60;= number+1; i++)
+                        node2 = node2->next;
+                    node2->prev = node1;
+                    node1->next = node2;
+                    node->prev = NULL;
+                    node->next = NULL;
+                    node = NULL;
+                }
+                else if(number == count) 
                 {
-					node = last;
-					last = node->prev;
-					last->next = NULL;
-					node = NULL;
-				}
-				else
-					cout &#60;&#60; "Invalid node number!" &#60;&#60; endl;
-			}
-			else 
+                    node = last;
+                    last = node->prev;
+                    last->next = NULL;
+                    node = NULL;
+                }
+                else
+                    cout &#60;&#60; "Invalid node number!" &#60;&#60; endl;
+            }
+            else 
             {
-				node = first;
-				first = node->next;
-				first->prev = NULL;
-				node = NULL;
-			}
-			cout &#60;&#60; "Node has been deleted successfully!" &#60;&#60; endl;
-		}
-	
-};
+                node = first;
+                first = node->next;
+                first->prev = NULL;
+                node = NULL;
+            }
+            cout &#60;&#60; "Node has been deleted successfully!" &#60;&#60; endl;
+        }
+	};
 
 int main() 
 {
-	int op = 0;
-	linkedlist list = linkedlist();
-	while(op != 4) 
+    int op = 0;
+    linkedlist list = linkedlist();
+    while(op != 4) 
     {
-		cout &#60;&#60; "1. Insert at the beginning\n2. Insert at the end\n3. Delete\n4. Display\n5. Exit" &#60;&#60; endl;
-		cout &#60;&#60; "Enter your choice:" &#60;&#60; endl;
-		cin >> op;
-		switch(op) 
+        cout &#60;&#60; "1. Insert at the beginning\n2. Insert at the end\n3. Delete\n4. Display\n5. Exit" &#60;&#60; endl;
+        cout &#60;&#60; "Enter your choice:" &#60;&#60; endl;
+        cin >> op;
+        switch(op) 
         {
-			case 1:
-				llist.insert_beginning();
-				break;
-			case 2:
-				llist.insert_end();
-				break;
-			case 3:
-				llist.del();
-				break;
-			case 4:
-				llist.display();
-				break;
-			case 5:
-				cout &#60;&#60; "Bye Bye!" &#60;&#60; endl;
-				return 0;
-				break;
-			default:
-				cout &#60;&#60; "Invalid choice!" &#60;&#60; endl;
-		}
-	}
-	return 0;
+            case 1:
+                llist.insert_beginning();
+                break;
+            case 2:
+                llist.insert_end();
+                break;
+            case 3:
+                llist.del();
+                break;
+            case 4:
+                llist.display();
+                break;
+            case 5:
+                cout &#60;&#60; "Bye Bye!" &#60;&#60; endl;
+                return 0;
+                break;
+            default:
+                cout &#60;&#60; "Invalid choice!" &#60;&#60; endl;
+        }
+    }
+    return 0;
 }</code></pre>
                 </div>
         </section>
@@ -457,12 +442,11 @@ int main()
             <script src="assets/js/backtotop.js"></script>
         
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
             <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+            <script src="assets/js/toelement.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 	</body>
 </html>

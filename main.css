@@ -45,7 +45,119 @@
 
 code{
     color: black;
+    font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
 }
+/* ------ START OF THEME ------ */
+/*
+ * Github
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+pre.theme-github {
+  padding: 2em;
+  color: #555555;
+}
+pre.theme-github code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+pre.theme-github .pln {
+  color: #555555;
+}
+pre.theme-github .str {
+  color: #DD1144;
+}
+pre.theme-github .kwd {
+  color: #445588;
+}
+pre.theme-github .com {
+  color: #b8b6b1;
+}
+pre.theme-github .typ {
+  color: #008080;
+}
+pre.theme-github .lit {
+  color: #DD1144;
+}
+pre.theme-github .pun,
+pre.theme-github .opn,
+pre.theme-github .clo {
+  color: #555555;
+}
+pre.theme-github .tag {
+  color: #445588;
+}
+pre.theme-github .atn {
+  color: #008080;
+}
+pre.theme-github .atv {
+  color: #DD1144;
+}
+pre.theme-github .dec,
+pre.theme-github .var {
+  color: #DD1144;
+}
+pre.theme-github .fun {
+  color: #445588;
+}
+
+/* ------ START OF THEME ------ */
+/*
+ * Frontier Contrast
+ * Prettify CSS Theme.
+ *
+ * Copyright (c) 2014 Dayle Rees
+ */
+pre.theme-frontier-contrast {
+  background-color: #110f0e;
+  padding: 2em;
+  color: #F8F8F2;
+}
+pre.theme-frontier-contrast code {
+  font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+}
+pre.theme-frontier-contrast .pln {
+  color: #F8F8F2;
+}
+pre.theme-frontier-contrast .str {
+  color: #F8BB39;
+}
+pre.theme-frontier-contrast .kwd {
+  color: #2EBF7E;
+}
+pre.theme-frontier-contrast .com {
+  color: #7A7267;
+}
+pre.theme-frontier-contrast .typ {
+  color: #F23A3A;
+}
+pre.theme-frontier-contrast .lit {
+  color: #F8BB39;
+}
+pre.theme-frontier-contrast .pun,
+pre.theme-frontier-contrast .opn,
+pre.theme-frontier-contrast .clo {
+  color: #F8F8F2;
+}
+pre.theme-frontier-contrast .tag {
+  color: #2EBF7E;
+}
+pre.theme-frontier-contrast .atn {
+  color: #F23A3A;
+}
+pre.theme-frontier-contrast .atv {
+  color: #F8BB39;
+}
+pre.theme-frontier-contrast .dec,
+pre.theme-frontier-contrast .var {
+  color: #F8BB39;
+}
+pre.theme-frontier-contrast .fun {
+  color: #2EBF7E;
+}
+
+
+
 
 /* Box Model */
 
@@ -1714,7 +1826,7 @@ code{
 		border-radius: 4px;
 		border-style: solid;
 		border-width: 1px;
-		font-family: "Courier New", monospace;
+		font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
@@ -1725,6 +1837,7 @@ code{
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0 2em 0;
+        border: 0px !important;
 	}
 
 		pre code {
@@ -4394,18 +4507,20 @@ html, body {
  
 /* double the height/width of a viewport */
 #slides {
-    width: 200%;
-    height: 200%;
+    width: 303%;
+    height: 300%;
     position: fixed;
     top: 0;
     left: 0;
+    margin-top: 1%;
+    background-color: #63c1ae;
 }
 .slide {
     position:absolute;
     top:0;
     left:0;
-    width:50%;
-    height:50%;
+    width:33%;
+    height:33%;
 }
 #slide-1 {
     background: url('../../images/montreal-banner.jpg') no-repeat center center;
@@ -4452,10 +4567,45 @@ html, body {
 #slide-4 .caption h1{
     color: #47373f;
 }
-#slide-cons{
-    background: url('../../images/photo-crane.jpe') no-repeat center center;
+#slide-5 {
+    background: url('../../images/banner.jpg') no-repeat center center;
     background-size: cover;
-    top: 3%;
+    -webkit-transform: translate(200%, 0);
+    -ms-transform: translate(200%,0);
+    transform: translate(200%,0);
+}
+#slide-6 {
+    background: url('../../images/photo-code.jpe') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(0,200%);
+    -ms-transform: translate0,200%);
+    transform: translate(0,200%);
+}
+#slide-7 {
+    background: url('../../images/photo-thanks.jpe') no-repeat center center;
+    background-size: cover;
+    -webkit-transform: translate(100%,200%);
+    -ms-transform:translate(100$,200%);
+    transform:translate(100%,200%);
+}
+#slide-8 {
+    background: url('../../images/photo-crane.jpe');
+    background-size: cover;
+    -webkit-transform: translate(200%,100%);
+    -ms-transform: translate (200%,100%);
+    transform: translate(200%,100%):
+}
+#slide-9 {
+    background: url('../../images/IMGP2627.JPG');
+    background-size: cover;
+    -webkit-transform: translate(200%,200%);
+    -ms-transform: translate (200%,200%);
+    transform: translate(200%,200%):
+}
+
+#slide-cons{
+    background: url('../../images/photo-crane.jpe') no-repeat top center;
+    background-size: cover;
 }
 #slide-cons .caption {
     top: auto;
@@ -4466,7 +4616,7 @@ html, body {
     color:darkorange;
 }
 #slide-thx{
-    background: url('../../images/photo-thanks.jpe') no-repeat center center;
+    background: url('../../images/photo-thanks.jpe') no-repeat bottom center;
     background-size: cover;
 }
 #slide-thx .caption 
@@ -4481,22 +4631,24 @@ html, body {
     color: white;
 }
 #slide-thx .caption p{
+    padding-left: 1%;
     color: white;
 }
 #slide-thx .caption  ul
 {
-    font-size-adjust: 0.75;
+    padding-top: 25px;
+    font-size: 25px;
 }
 
 #helper {
     position:absolute;
     left:0;
     top: 0;
-    height:605%;
-    width: 0;
+    height: 1205%;
+    width: 25px;
 }
 .marker {
-    height: 25%;
+    height: 12%;
     width: 100%;
 }
 .red {
@@ -4525,14 +4677,17 @@ html, body {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+    z-index: -100;
 }
 .overlay:target {
   visibility: visible;
   opacity: 1;
+    z-index: 25;
 }
 
 .popup {
     position: relative;
+    top: 15px;
     width: 90%;
     padding: 20px;
     border-radius: 5px;
@@ -4660,20 +4815,14 @@ html, body {
   }
 }
 
+/* Carousel */
+
 /* Carousel base class */
 .carousel {
-    background-color: orange;
-    padding-top: 3.25em;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 60px;
-}
-@media screen and (max-width: 980px)
-{
-    .carousel
-    {
-        padding-top: 44px;
-    }
+    position: relative;
+    min-width: 100%;
+  height: 100%;
+  margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -4682,6 +4831,7 @@ html, body {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
+    min-width: 100%;
   height: 100%;
   background-color: #777;
 }
@@ -4690,5 +4840,6 @@ html, body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 100%;
+  height: auto;
 }
+
