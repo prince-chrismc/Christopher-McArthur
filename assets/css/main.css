@@ -4507,12 +4507,13 @@ html, body {
  
 /* double the height/width of a viewport */
 #slides {
-    width: 101%;
-    height: 99%;
+    width: 303%;
+    height: 300%;
     position: fixed;
     top: 0;
     left: 0;
     margin-top: 1%;
+    background-color: #63c1ae;
 }
 .slide {
     position:absolute;
@@ -4595,7 +4596,7 @@ html, body {
     transform: translate(200%,100%):
 }
 #slide-9 {
-    background: url('../../images/pic08.jpg');
+    background: url('../../images/IMGP2627.JPG');
     background-size: cover;
     -webkit-transform: translate(200%,200%);
     -ms-transform: translate (200%,200%);
@@ -4603,9 +4604,8 @@ html, body {
 }
 
 #slide-cons{
-    background: url('../../images/photo-crane.jpe') no-repeat center center;
+    background: url('../../images/photo-crane.jpe') no-repeat top center;
     background-size: cover;
-    top: 3%
 }
 #slide-cons .caption {
     top: auto;
@@ -4616,7 +4616,7 @@ html, body {
     color:darkorange;
 }
 #slide-thx{
-    background: url('../../images/photo-thanks.jpe') no-repeat center center;
+    background: url('../../images/photo-thanks.jpe') no-repeat bottom center;
     background-size: cover;
 }
 #slide-thx .caption 
@@ -4631,11 +4631,13 @@ html, body {
     color: white;
 }
 #slide-thx .caption p{
+    padding-left: 1%;
     color: white;
 }
 #slide-thx .caption  ul
 {
-    font-size-adjust: 0.75;
+    padding-top: 25px;
+    font-size: 25px;
 }
 
 #helper {
