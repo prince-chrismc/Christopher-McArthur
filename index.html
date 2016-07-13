@@ -142,7 +142,7 @@
 					<h2>Get in touch</h2>
 					<p>Drop Me A line if you have any questions</p>
                 </header>
-				<form action="https://formspree.io/prince.chrismc@gmail.com" method="post">
+				<form id="myform" action="https://formspree.io/prince.chrismc@gmail.com" method="post">
                     <input name="_next" value="thanks.html" type="hidden"/>
                     <input name="_subject" value="New Submission!" type="hidden"/>
                     <input type="text" name="_gotcha" style="display:none"/>
@@ -154,6 +154,18 @@
 							<div class="6u$ 12u$(xsmall)">
 								<input name="email" placeholder="Email" type="email" />
 							</div>
+                            <div class="12u$">
+				                <div class="select-wrapper">
+								    <select name="category" id="category">
+									    <option style="color: black;" value="null">- Category -</option>
+										<option style="color: black;" value="photo">Photography</option>
+										<option style="color: black;" value="web">Web Design</option>
+										<option style="color: black;" value="app">Applications</option>
+										<option style="color: black;" value="robot">Robotics</option>
+                                        <option style="color: black;" value="other">Other</option>
+								    </select>
+								</div>
+					        </div>
                             <div class="6u 12u$(small)">
 								<input type="checkbox" id="copy" name="copy">
 								<label for="copy">Email me a copy of this message</label>
@@ -169,7 +181,7 @@
 				    </div>
 					<ul class="actions">
 						<li><input type="submit" class="special" value="Send" /></li>
-						<li><input type="reset" class="alt" value="Reset"/></li>
+						<li><input type="reset" class="alt" value="Reset" onClick="clearForm();"/></li>
 					</ul>
 				</form>
             </div>
@@ -198,5 +210,10 @@
         <script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
         <script src="assets/js/skrollr.min.js"></script>
+        <script type="text/javascript">
+          function clearForm(){
+          document.getElementById("myform").reset();
+          }
+        </script>
 	</body>
 </html>

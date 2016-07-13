@@ -4843,3 +4843,52 @@ html, body {
   height: auto;
 }
 
+
+
+/* under construction icon */
+
+#underCons  
+{
+    z-index: 10000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 15px;
+    margin-left: 15px;
+	width: 150px;
+	height: 150px;
+	background: darkorange;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 35% 85%, 15% 100%, 15% 85%, 0 85%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 35% 85%, 15% 100%, 15% 85%, 0 85%);
+    border-radius: 5px;
+}
+#underCons .cons-text {
+    text-align: left;
+    position: relative;
+    margin-top: 5px;
+    padding: 15px;
+    line-height: 1.25em;
+    color: white;
+}
+
+#underCons .cons-text a {
+    line-height: 1.25em;
+    color: white;
+    text-decoration: underline;
+}
+
+#underCons .close {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    z-index: 10001;
+}
+#underCons .close:hover {
+    color: red;
+}pacity: 0;
