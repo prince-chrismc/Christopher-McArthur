@@ -1,1 +1,51 @@
 
+<section id="contact" class="wrapper style2 special">
+	        <div class="inner">
+                <header class="major narrow">
+					<h2>Get in touch</h2>
+					<p>Drop Me A line if you have any questions</p>
+                </header>
+				<form id="myform" action="https://formspree.io/cmcarthu@matrox.com" method="post">
+                    <input name="_next" value="thanks.html" type="hidden"/>
+                    <input name="_subject" value="New Submission!" type="hidden"/>
+                    <input type="text" name="_gotcha" style="display:none"/>
+					<div class="container 75%">
+						<div class="row uniform 50%">
+				            <div class="6u 12u$(xsmall)">
+								<input name="name" placeholder="Name" type="text" />
+							</div>
+							<div class="6u$ 12u$(xsmall)">
+								<input name="email" placeholder="Email" type="email" />
+							</div>
+                            <div class="12u$">
+				                <div class="select-wrapper">
+								    <select name="category" id="category">
+									    <option style="color: black;" value="null">- Category -</option>
+										<option style="color: black;" value="photo">Photography</option>
+										<option style="color: black;" value="web">Web Design</option>
+										<option style="color: black;" value="app">Applications</option>
+										<option style="color: black;" value="robot">Robotics</option>
+                                        <option style="color: black;" value="other">Other</option>
+								    </select>
+								</div>
+					        </div>
+                            <div class="6u 12u$(small)">
+								<input type="checkbox" id="copy" name="copy">
+								<label for="copy">Email me a copy of this message</label>
+							</div>
+							<div class="6u$ 12u$(small)">
+				                <input type="checkbox" id="human" name="human" checked>
+								<label for="human">I am a human and not a robot</label>
+				            </div>
+							<div class="12u$">
+								<textarea name="message" placeholder="Message" rows="4"></textarea>
+							</div>
+				        </div>
+				    </div>
+					<ul class="actions">
+						<li><input type="submit" class="special" value="Send" /></li>
+						<li><input type="reset" class="alt" value="Reset" onClick="clearForm();"/></li>
+					</ul>
+				</form>
+            </div>
+        </section>
