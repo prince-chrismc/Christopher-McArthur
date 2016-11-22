@@ -145,8 +145,8 @@ class Node
                     
 <h5 id="preorder">C++ Inorder And Preorder Tree Builder</h5>
 <pre class="prettyprint"><code>/* program to construct tree using inorder and preorder traversals */
-#include stdio.h 
-#include stdlib.h 
+#include &#60;stdio.h>
+#include &#60;stdlib.h>
  
 /* A binary tree node has data, pointer to left child
    and a pointer to right child */
@@ -156,7 +156,12 @@ struct node
     struct node* left;
     struct node* right;
 };
- 
+
+// Prototypes for utility functions 
+int search(char arr[], int strt, int end, char value);
+struct node* newNode(char data); 
+
+
 /* Recursive function to construct binary of size len from
    Inorder traversal in[] and Preorder traversal pre[].  Initial values
    of inStrt and inEnd should be 0 and len -1.  The function doesn't
@@ -191,10 +196,6 @@ struct node* buildTree(char in[], char pre[], int inStrt, int inEnd)
 
     return tNode;
 }
- 
-// Prototypes for utility functions 
-int search(char arr[], int strt, int end, char value);
-struct node* newNode(char data); 
  
 // UTILITY FUNCTIONS
 /* Function to find index of value in arr[start...end]
@@ -239,8 +240,8 @@ void printInorder(struct node* node)
 // Driver program to test above functions
 int main()
 {
-    /* Inorder: S A E U Y Q R P D F K L M
-       Preorder: F A S Q Y E U P R D K L M */
+    /* Inorder:  E O N F K L J C A I N H D G B
+       Preorder: H O E C L F N K J I A N G D B */
     char in[] = {'S', 'A', 'E', 'U', 'Y', 'Q', 'R', 'P', 'D', 'F', 'K', 'L', 'M'};
     char pre[] = {'F', 'A', 'S', 'Q', 'Y', 'E', 'U', 'P', 'R', 'D', 'K', 'L', 'M'};
     int len = sizeof(in)/sizeof(in[0]);
