@@ -66,6 +66,7 @@
 						<li><a class="button special fit small scroll-link" data-id="inorder">Java Tree Builder</a></li>
                         <li><a class="button special fit small scroll-link" data-id="preorder">C++ Tree Builder</a></li>
                         <li><a class="button special fit small scroll-link" data-id="doubly">C++ LinkedList </a></li>
+                        <li><a class="button special fit small scroll-link" data-id="counting">C++ Counting Sort </a></li>
 				    </ul>
 				</div>
             </div>
@@ -418,7 +419,89 @@ int main()
     return 0;
 }</code></pre>
             
-            
+    
+<h5  id="counting" >C++ Counting Sort</h5>
+            <pre class="prettyprint theme-frontier-contrast"><code>
+// Example program
+#include &#60;iostream>
+#include &#60;string>
+
+/* this is big-Oh(n^2 ) */
+int main()
+{
+  int arry[] = {60,35,81,98,14,47};
+  int srry[6];
+  int S[6];
+  for( int i = 0; i &#60; 6 ;i++)
+  {
+      srry[i] = 0;
+      printf("i: %d | srry: {", i);
+      for (int j = 0; j &#60; 6 ; j++)
+      {
+          printf(" %d,",srry[j]);
+      }
+      printf("}\n");
+  }
+  for(int i = 0; i &#60; 6 - 1; i++)
+  {
+      for(int j = i + 1; j &#60; 6 ; j++)
+      {
+        if( arry[i] &#60;= arry[j] )
+        {
+            srry[j] = srry[j]+1;
+        }
+        else
+        {
+            srry[i] = srry[i]+1;
+        }
+        printf("i: %d | j: %d | srry: {", i, j);
+        for (int k = 0; k &#60; 6 ; k++)
+        {
+            printf(" %d,",srry[k]);
+        }
+        printf("}\n");
+      }
+  }
+  for(int i = 0; i &#60; 6; i++)
+  {
+      S[srry[i]] = arry[i];
+      
+      printf("i: %d | s: {", i);
+      for (int j = 0; j &#60; 6 ; j++)
+      {
+          printf(" %d,",srry[j]);
+      }
+      printf("}\n");
+  }   
+      
+}  
+
+/* this is Big-Oh better than n log n */
+void CountingSort(int arr[], int sz) 
+{
+	int i, j, k;
+	int idx = 0;
+	int min, max;
+ 
+	min = max = arr[0];
+	for(i = 1; i &#60; sz; i++) {
+		min = (arr[i] &#60; min) ? arr[i] : min;
+		max = (arr[i] > max) ? arr[i] : max;
+	}
+ 
+	k = max - min + 1;
+	/* creates k buckets */
+	int *B = new int [k]; 
+	for(i = 0; i &#60; k; i++) B[i] = 0;
+
+	for(i = 0; i &#60; sz; i++) B[arr[i] - min]++;
+	for(i = min; i &#60;= max; i++) 
+		for(j = 0; j &#60; B[i - min]; j++) arr[idx++] = i;
+ 
+	print(arr,sz);
+
+	delete [] B;
+}   </code></pre>
             <p>
 Imperdiet ullamcorper sagittis diam nisi hac posuere hendrerit ultricies eu integer sociis. Lorem fermentum ut sociosqu nunc netus congue mattis. Vestibulum ridiculus convallis curae; cubilia phasellus nam fames nostra ridiculus blandit nec. Donec, nec sociosqu condimentum risus nisi consectetur massa. Feugiat laoreet semper gravida justo dis egestas at ante leo semper. Lorem montes.
 </p>
