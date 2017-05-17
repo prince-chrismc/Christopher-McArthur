@@ -47,9 +47,8 @@
 					<p>Now I can take notes anywhere and send them to myself!</p>
                 </header>
 		<form id="myform" action="https://formspree.io/cmcarthu@matrox.com" method="post">
-                    <input name="_next" value="thanks.html" type="hidden"/>
+                    <input name="_next" value="Work.html" type="hidden"/>
                     <input name="_subject" value="New Note!" type="hidden"/>
-                    <input type="text" name="_gotcha" style="display:none"/>
 			<div class="container 75%">
 				<div class="select-wrapper" style="margin-bottom:25px;">
 					<select name="category" id="category">
@@ -61,9 +60,10 @@
 						<option style="color: black;" value="linux"> Git</option>
                                         	<option style="color: black;" value="other">Other</option>
 					</select>
+					<input type="text" name="subgroup"/>
 				</div>
 				<div class="12u$">
-					<textarea name="message" placeholder="Message" rows="4"></textarea>
+					<textarea name="message" placeholder="Message" rows="4" style="resize: vertical;"></textarea>
 				</div>
 			</div>
 			<ul class="actions">
