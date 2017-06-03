@@ -61,12 +61,12 @@
 					<input type="text" id="subgroup" name="subgroup"/>
 				</div>
 				<div class="12u$">
-					<textarea name="message" id="msg" placeholder="Message" rows="4" style="resize: vertical;"></textarea>
+					<textarea name="message" id="message" placeholder="Message" rows="4" style="resize: vertical;"></textarea>
 				</div>
 			</div>
 			<ul class="actions">
-				<li><input type="submit" class="special" value="Send" /></li>
-				<li><input type="reset" class="alt" value="Reset" onClick="clearForm();"/></li>
+				<li><input type="submit" class="special"/></li>
+				<li><input type="reset" class="alt" onClick="clearForm();"/></li>
 			</ul>
 		</form>
             </div>
@@ -81,32 +81,35 @@
           }
 
             // contact form
-$(document).ready(function() {
-	$('form#my8form').submit(function() {
+            $(document).ready(function() {
+                $('form#myform').submit(function(e) {
+                    e.preventDefault();
 
-			//get the name field value
-			var category = $('#category').val();
-			//get the name field value
-			var email = $('#subgroup').val();
-			//get the comments
-			var message = $('#msg').val();
+                    //get the name field value
+                    var category = $('#category').val();
+                    //get the name field value
+                    var subgroup = $('#subgroup').val();
+                    //get the comments
+                    var message = $('#message').val();
 
-			$.ajax({
-			    url:'https://formspree.io/cmcarthu@matrox.com',
-			    method:'POST',
-			    data:{
-				category:category,
-				Subgroup:email,
-				message:message,
-				_subject:'New Note!',
-			    },
-			    dataType:"json",
-			    success:function() {
-				console.log('success');
-				$('form#myform').InsertBefore('<div class="alert success"><b>Success!</b> Thank you. Your email was sent successfully.</div>');
-			    }
-			});
-    });
+                    $.ajax({
+                        url:'https://formspree.io/cmcarthu@matrox.com',
+                        method:'POST',
+                        data:{
+                            category:category,
+                            Subgroup:subgroup,
+                            message:message,
+                            _subject:'New Note!',
+                            _format:'plain'
+                        },
+                        dataType:"json",
+                        success:function() {
+                            console.log('success');
+                            $('form#myform').InsertBefore('<div class="alert success"><b>Success!</b> Thank you. Your email was sent successfully.</div>');
+                        }
+                    });
+                });
+            });
         </script>
 	</body>
 </html>
