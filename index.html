@@ -8,10 +8,16 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/4711daecb5.css">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
         <!-- CSS -->
-        <link rel="stylesheet" href="assets/css/normalize.css"/>
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/animate.css" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="stylesheet" href="assets/css/animate.css">
         
         <!-- Web Icon -->
         <link rel="shortcut icon" href="images/webcode_icon.ico"/>
@@ -22,7 +28,7 @@
     
     <body class="landing">   
     <!-- Header -->
-    <header id="header" class="alt">
+    <header class="navbar-fixed-top alt">
         <h1><a href="index.html">Christopher McArthur</a></h1>
         <a href="#nav">Menu</a>
     </header>
@@ -30,21 +36,21 @@
     <!-- Nav -->
     <nav id="nav">
         <ul class="links">
-            <li><a class="icon fa-home" href="index.html">  Home</a></li>
-            <li><a class="icon fa-code" href="webDev.html">  Website Development</a></li>
-            <li><a class="icon fa-file-o" href="images/CV%202016%20coop.pdf">  Resume</a></li>
-            <li><a class="icon fa-user" href="construction.html">  Biography</a></li>
-            <li><a class="icon fa-photo" href="portfolio.html">  Portfolio</a></li>
-            <li><a class="icon fa-cogs" href="robotics.html">  Robotics</a></li>
-            <li><a class="icon fa-paper-plane-o" href="index.html#contact">  Contact</a></li>
-            <li><a class="icon fa-github" href="https://github.com/prince-chrismc/" >  Github</a></li>
-            <li><a class="icon fa-linkedin" href="https://ca.linkedin.com/in/ChristopherMcArthur1996" >  LinkedIn</a></li>
+            <li><a class="fa fa-home" href="index.html">  Home</a></li>
+            <li><a class="fa fa-code" href="webDev.html">  Website Development</a></li>
+            <li><a class="fa fa-file-o" href="images/CV%202016%20coop.pdf">  Resume</a></li>
+            <li><a class="fa fa-user" href="construction.html">  Biography</a></li>
+            <li><a class="fa fa-photo" href="portfolio.html">  Portfolio</a></li>
+            <li><a class="fa fa-cogs" href="robotics.html">  Robotics</a></li>
+            <li><a class="fa fa-paper-plane-o" href="index.html#contact">  Contact</a></li>
+            <li><a class="fa fa-github" href="https://github.com/prince-chrismc/" >  Github</a></li>
+            <li><a class="fa fa-linkedin" href="https://ca.linkedin.com/in/ChristopherMcArthur1996" >  LinkedIn</a></li>
         </ul>
     </nav>
         
     <!-- Banner -->
 	<section id="banner">
-	   <i class="icon fa-code wow jello" data-wow-delay="1.2s"></i>
+	   <i class="fa fa-code wow jello" data-wow-delay="1.2s"></i>
 		<h2>Welcome to My Site</h2>
 		<p>The Wonders of Programming as I learn web design</p>
 		<ul class="actions">
@@ -58,7 +64,7 @@
             <h2>Welcome!</h2>
             <a class="close" href="#">&times;</a>
             <div class="content">
-                Thanks for visiting. Just to let you know this site is under construction so if you ever get lost just use the menu to come back to home. =) Beyond that, in the menu is a link to my github feel free to post an issue <a href="https://github.com/prince-chrismc/Christopher-McArthur/issues" class="icon fa-github"> Here</a> if you find any! Enjoy.
+                Thanks for visiting. Just to let you know this site is under construction so if you ever get lost just use the menu to come back to home. =) Beyond that, in the menu is a link to my github feel free to post an issue <a href="https://github.com/prince-chrismc/Christopher-McArthur/issues" class="fa fa-github"> Here</a> if you find any! Enjoy.
             </div>
         </div>
         <span class="pulse"></span>
@@ -147,15 +153,15 @@
                     <input name="_next" value="thanks.html" type="hidden"/>
                     <input name="_subject" value="New Submission!" type="hidden"/>
                     <input type="text" name="_gotcha" style="display:none"/>
-					<div class="container 75%">
-						<div class="row uniform 50%">
-				            <div class="6u 12u$(xsmall)">
+					<div class="container">
+						<div class="row">
+				            <div class="">
 								<input name="name" placeholder="Name" type="text" />
 							</div>
-							<div class="6u$ 12u$(xsmall)">
+							<div class="">
 								<input name="email" placeholder="Email" type="email" />
 							</div>
-                            <div class="12u$">
+                            <div class="">
 				                <div class="select-wrapper">
 								    <select name="category" id="category">
 									    <option style="color: black;" value="null">- Category -</option>
@@ -167,15 +173,15 @@
 								    </select>
 								</div>
 					        </div>
-                            <div class="6u 12u$(small)">
+                            <div class="">
 								<input type="checkbox" id="copy" name="copy">
 								<label for="copy">Email me a copy of this message</label>
 							</div>
-							<div class="6u$ 12u$(small)">
+							<div class="">
 				                <input type="checkbox" id="human" name="human" checked>
 								<label for="human">I am a human and not a robot</label>
 				            </div>
-							<div class="12u$">
+							<div class="">
 								<textarea name="message" placeholder="Message" rows="4"></textarea>
 							</div>
 				        </div>
@@ -192,8 +198,8 @@
 		<footer id="footer">
 	       <div class="inner wow fadeIn" data-wow-offset="15">
                <ul class="icons">
-					<li><a href="https://github.com/prince-chrismc/" class="icon fa-github"><span class="label">Github</span></a></li>
-				    <li><a href="https://ca.linkedin.com/in/ChristopherMcArthur1996" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/prince-chrismc/" class="fa fa-github"><span class="label">Github</span></a></li>
+				    <li><a href="https://ca.linkedin.com/in/ChristopherMcArthur1996" class="fa fa-linkedin"><span class="label">LinkedIn</span></a></li>
                </ul>
                <ul class="copyright">
 					<li>&copy; All Rights Resvered.</li>
