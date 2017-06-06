@@ -28,11 +28,9 @@ var cbpAnimatedHeader = (function() {
 	function scrollPage() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
-            header.removeClass('navbar-expanded');
             header.removeClass('alt');
 		}
 		else {
-            header.addClass('navbar-expanded');
             header.addClass('alt');
 		}
 		didScroll = false;
