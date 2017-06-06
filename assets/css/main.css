@@ -70,17 +70,17 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 h1 {
     font-size: 2em;
-	line-height: 2em;
+	line-height: 2.25em;
 }
 
 h2 {
 	font-size: 1.75em;
-	line-height: 1.75em;
+	line-height: 2em;
 }
 
 h3 {
 	font-size: 1.5em;
-	line-height: 1.5em;
+	line-height: 1.75em;
 }
 
 h4 {
@@ -159,112 +159,114 @@ a {
     color: #51BAA4;
 }
 
-	strong, b {
-		color: #25383B;
+strong, b {
+	color: #25383B;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #25383B;
+}
+
+blockquote {
+	border-left-color: rgba(144, 144, 144, 0.25);
+}
+
+code {
+	background: rgba(144, 144, 144, 0.075);
+	border-color: rgba(144, 144, 144, 0.25);
+}
+
+hr {
+	border-bottom-color: rgba(144, 144, 144, 0.25);
+}
+
+/* Section/Article ----------------------------------------------------------------------------- */
+
+section.special,
+article.special,
+header.special {
+	text-align: center;
+}
+
+header p {
+	margin: 0 0 1.5em 0;
+	position: relative;
+	text-transform: uppercase;
+}
+
+header h2 + p {
+	font-size: 1.25em;
+	margin-top: -1em;
+	line-height: 1.85em;
+}
+
+header h3 + p {
+	font-size: 1.1em;
+	margin-top: -0.8em;
+	line-height: 1.5em;
+}
+
+header h4 + p,
+header h5 + p,
+header h6 + p {
+	font-size: 0.9em;
+	margin-top: -0.6em;
+	line-height: 1.5em;
+}
+
+header.major {
+	margin-bottom: 4em;
+}
+
+header .major h2 {
+	font-size: 2.5em;
+}
+
+header .narrow {
+	max-width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: 1280px) {
+
+	header.narrow {
+		max-width: 75%;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		color: #25383B;
-	}
+}
 
-	blockquote {
-		border-left-color: rgba(144, 144, 144, 0.25);
-	}
+@media screen and (max-width: 980px) {
 
-	code {
-		background: rgba(144, 144, 144, 0.075);
-		border-color: rgba(144, 144, 144, 0.25);
-	}
-
-	hr {
-		border-bottom-color: rgba(144, 144, 144, 0.25);
-	}
-
-/* Section/Article ----------------------------------------------------------------------------- CONTINEU FROM HERE */
-
-	section.special, article.special, header.special {
-		text-align: center;
-	}
-
-	header p {
-		margin: 0 0 1.5em 0;
-		position: relative;
-		text-transform: uppercase;
-	}
-
-	header h2 + p {
-		font-size: 1.25em;
-		margin-top: -1em;
-		line-height: 1.85em;
-	}
-
-	header h3 + p {
-		font-size: 1.1em;
-		margin-top: -0.8em;
-		line-height: 1.5em;
-	}
-
-	header h4 + p,
-	header h5 + p,
-	header h6 + p {
-		font-size: 0.9em;
-		margin-top: -0.6em;
-		line-height: 1.5em;
+	header.narrow {
+		max-width: 100%;
 	}
 
 	header.major {
-		margin-bottom: 4em;
+		margin-bottom: 2em;
 	}
 
 		header.major h2 {
-			font-size: 2.5em;
+			font-size: 2em;
 		}
 
-	header.narrow {
-		max-width: 60%;
-		margin-left: auto;
-		margin-right: auto;
+}
+
+@media screen and (max-width: 736px) {
+
+	header.major h2 {
+		font-size: 1.5em;
 	}
 
-	@media screen and (max-width: 1280px) {
-
-		header.narrow {
-			max-width: 75%;
-		}
-
+	header .major p {
+		font-size: 1em;
 	}
 
-	@media screen and (max-width: 980px) {
+}
 
-		header.narrow {
-			max-width: 100%;
-		}
-
-		header.major {
-			margin-bottom: 2em;
-		}
-
-			header.major h2 {
-				font-size: 2em;
-			}
-
-	}
-
-	@media screen and (max-width: 736px) {
-
-		header.major h2 {
-			font-size: 1.5em;
-		}
-
-		header.major p {
-			font-size: 1em;
-		}
-
-	}
-
-	header p {
-		color: #25383B;
-	}
+header p {
+	color: #25383B;
+}
 
 /* Form */
 
@@ -523,32 +525,6 @@ a {
 	form.alt select,
 	form.alt textarea {
 		background-color: transparent;
-	}
-
-/* Box */
-
-	.box {
-		border-radius: 4px;
-		border-style: solid;
-		border-width: 1px;
-		margin-bottom: 2em;
-		padding: 1.5em;
-	}
-
-		.box > :last-child,
-		.box > :last-child > :last-child,
-		.box > :last-child > :last-child > :last-child {
-			margin-bottom: 0;
-		}
-
-		.box.alt {
-			border: 0;
-			border-radius: 0;
-			padding: 0;
-		}
-
-	.box {
-		border-color: rgba(144, 144, 144, 0.25);
 	}
 
 /* Icon */
