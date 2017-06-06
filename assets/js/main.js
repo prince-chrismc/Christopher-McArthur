@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
     var	$window = $(window),
 		$body = $('body');
     
@@ -23,6 +23,4 @@ $(function() {
                 resetForms: true,
                 side: 'right'
 	       });
-})(jQuery);
-
-
+});
